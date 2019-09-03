@@ -1,0 +1,18 @@
+{
+  "files" : [
+    "cdnjs:font-awesome",
+    "cdnjs:animate.css",
+    "cdnjs:slick-carousel:slick.css",
+    "cdnjs:slick-carousel:slick-theme.css",
+
+    "cdnjs:wow",
+    "cdnjs:owl-carousel",
+    "cdnjs:slick-carousel",
+    {
+      "file"    : "bower_components/QueryLoader2/queryloader2.min.js",
+      "package" : "QueryLoader2",
+      "cdn"     : "//cdn.rawgit.com/Gaya/queryloader2/master/queryloader2.min.js"
+    },
+    "js/*.js"
+  ]
+}

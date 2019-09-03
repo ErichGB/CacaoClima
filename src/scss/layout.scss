@@ -1,0 +1,21 @@
+// less variable
+@import "variables";
+
+// Custom Common styles
+// -----------------------------------
+
+@import "global";
+@import "typography";
+
+// Layout
+// -----------------------------------
+@import "layouts/layout";
+
+//@import "layouts/header";
+//@import "layouts/header-mq";
+//@import "layouts/sidebar";
+//@import "layouts/sidebar-mq";
+//@import "layouts/maincontent";
+//@import "layouts/maincontent-mq";
+//@import "layouts/footer";
+//@import "layouts/section";

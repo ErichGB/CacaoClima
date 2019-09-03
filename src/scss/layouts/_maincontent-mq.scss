@@ -1,0 +1,16 @@
+/* ---------------------------- *
+ * Template Sidebar - screen-sm and up *
+ * --------------------------- */
+//@media (min-width: @screen-sm-min) {
+
+    // if screen-sm and sidebar-minimize
+    // -----------------------------------
+    .sidebar-minimized,
+    .screen-sm {
+        .sidebar-left.sidebar-menu {
+            ~ #main {
+
+            }
+        }
+    }
+//}

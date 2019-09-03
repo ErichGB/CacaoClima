@@ -1,0 +1,16 @@
+/* ---------------------------- *
+ * Template Section *
+ * --------------------------- */
+
+section.section {
+
+    // Section header
+    // -----------------------------------
+    .section-header {
+
+        > .section-title {
+            display: inline-block;
+            text-transform: uppercase;
+        }
+    }
+}

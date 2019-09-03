@@ -1,0 +1,24 @@
+// Color variation
+// ----------------------------------------------------------------------------
+$dark:              #1A2B40;
+$gray:              #90A0B7;
+$white:             #fff;
+
+$default:           #F4F7FC;
+
+$primary:           #00B4AC;
+$secondary:         #90A0B7;
+$success:           #42A145;
+$info:              #0094D2;
+$warning:           #F4D670;
+$danger:            #E73A23;
+
+// border color
+$border-color:      darken($default, 10%);
+
+// border radius
+$border-radius:     3px;
+
+// Typography
+$font-family:       'Heebo', sans-serif;
+$font-size-global:  14px;

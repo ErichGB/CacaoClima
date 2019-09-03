@@ -1,0 +1,8 @@
+{
+  "name": "template",
+  "version": "0.1",
+  "description": "",
+  "dependencies": {
+    "jquery": "3.4.0"
+  }
+}

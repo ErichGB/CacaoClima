@@ -1,0 +1,23 @@
+/* ----------------------------*
+ * Template Main *
+ * --------------------------- */
+
+// main content
+// -----------------------------------
+#main {
+    position: relative;
+    //.clearfix();
+
+    > .container-fluid,
+    > .container {
+
+    }
+}
+
+// if footer is present
+// -----------------------------------
+footer#footer {
+    ~ #main {
+
+    }
+}

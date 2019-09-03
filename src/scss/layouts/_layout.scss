@@ -1,0 +1,46 @@
+.layout {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  min-height: 0;
+  background: $default;
+
+  &#{&}-has-sider {
+    flex-direction: row;
+
+    > .layout,
+    > .layout-content {
+      overflow-x: hidden;
+    }
+  }
+
+  &-header,
+  &-footer {
+    flex: 0 0 auto;
+  }
+
+  &-content {
+    flex: auto;
+    min-height: 0;
+  }
+
+  &-sider {
+    position: relative;
+    min-width: 0;
+    transition: all 0.2s;
+
+    &-children {
+      height: 100%;
+      margin-top: -0.1px;
+      padding-top: 0.1px;
+    }
+
+    &-right {
+      order: 1;
+      padding-left: 0;
+      margin-left: 0;
+      padding-right: 1em;
+      margin-right: 1em;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+/* ----------------------------
+ *
+ * Typography
+ *
+ * --------------------------- */
+
+/* Import Stylesheet */
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900&display=swap');
+//
+
+/* Helper
+-------------------------------*/
+/* 
+ * normal
+ */
+.normal {
+    font-weight: normal;
+}
+/*
+ * bold
+ */
+.bold {
+    font-weight: 700;
+}
+/* 
+ * semi bold
+ */
+.semibold {
+    font-weight: 600;
+}
+/* 
+ * Thin
+ */
+.thin {
+    font-weight: 300;
+}
+/*
+ * highlight
+ */
+._highlight{
+    background: #fffdcd !important;
+}
