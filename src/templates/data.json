@@ -1,4 +1,27 @@
 {
-  "menu": [],
+  "menu": [
+    {
+      "id": "lugar",
+      "href": "/",
+      "icon": "World.svg",
+      "label": "Lugar",
+      "title": "Selecciona la ubicacion de la finca"
+
+    },
+    {
+      "id": "clima",
+      "href": "/clima",
+      "icon": "Winter.svg",
+      "label": "Clima",
+      "title": "Dashboard"
+    },
+    {
+      "id": "plan",
+      "href": "/plan",
+      "icon": "Book.svg",
+      "label": "Planificar",
+      "title": "Dashboard"
+    }
+  ],
   "sections": []
 }

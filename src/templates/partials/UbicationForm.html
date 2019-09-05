@@ -1,0 +1,28 @@
+<section style="width: 390px">
+    <div class="bg-default py-3 text-center mb-5">
+        <h4 class="m-0">Selecciona la ubicación de la finca</h4>
+    </div>
+
+    <form class="px-5">
+        <div class="form-group">
+            {% include "../svg/edit.svg" %}
+            <label for="coordinateInput">Ingresar coordenada</label>
+            <input id="coordinateInput"
+                   class="form-control"
+                   placeholder="36º 55' 10'' N 2º 56' 55'' O">
+        </div>
+
+        <div class="form-group mt-4 mb-0">
+            {% include "../svg/Shape.svg" %}
+            <label for="placeInput">Lugar</label>
+            <input id="placeInput"
+                   class="form-control"
+                   placeholder="Nombre del municipio">
+        </div>
+
+        <button type="submit" class="btn btn-block btn-lg btn-primary mt-5">
+            <span>Ir a la informacion</span>
+            <span>&rightarrow;</span>
+        </button>
+    </form>
+</section>

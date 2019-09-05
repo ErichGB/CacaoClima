@@ -1,4 +1,4 @@
-// less variable
+// variable
 @import "variables";
 
 // Custom Common styles
@@ -11,7 +11,7 @@
 // -----------------------------------
 @import "layouts/layout";
 
-//@import "layouts/header";
+@import "layouts/header";
 //@import "layouts/header-mq";
 //@import "layouts/sidebar";
 //@import "layouts/sidebar-mq";

@@ -1,37 +1,22 @@
-{% macro fullMenu(navigation, activePage='HOME') %}
-<aside id="menu">
-    <ul class="nav nav-pills hidden-xs">
-        <li role="presentation" class="active"><a href="#">English</a></li>
-        <li role="presentation" class=""><a href="#">Español</a></li>
-    </ul>
+{% macro Menu(navigation, activePage) %}
+<nav class="nav flex-column">
+    <a class="nav-card brand"
+       style="background-image: url('../../images/logo.png')"
+       href="/">
+    </a>
 
-    <ul class="nav nav-stacked main-menu">
-        {% for item in navigation %}
-        <li {% if activePage == item.label %} class="active" {% endif %}>
-            <a class="ellipsis" role="menuitem" tabindex="-1" href="{{item.link}}">{{item.label}}</a>
-        </li>
-        {% endfor %}
-
-        <!--<li>-->
-            <!--<a class="ellipsis" role="menuitem" tabindex="-1" href=" ">padre</a>-->
-            <!--<ul class="nav">-->
-                <!--<li>-->
-                    <!--<a href="#input-groups-basic">Basic example</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="#input-groups-sizing">Sizing</a>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</li>-->
-    </ul>
-
-    <ul class="nav nav-social">
-        <li>
-            <a class="ellipsis" role="menuitem" tabindex="-1" href="{{item.link}}">
-                <i class='fa fa-2x fa-facebook-official' aria-hidden='true'></i>
-                <span>/lospatiosgranada</span>
-            </a>
-        </li>
-    </ul>
-</aside>
+    {% for item in navigation %}
+    <a href="{{item.href}}"
+       {% if activePage == item.id %}
+        class="nav-card active"
+       {% else %}
+        class="nav-card"
+       {% endif %}
+       title="{{item.label}}"
+       >
+        {% include "../svg/" + item.icon %}
+        <span class="mt-2">{{item.label}}</span>
+    </a>
+    {% endfor %}
+</nav>
 {% endmacro %}

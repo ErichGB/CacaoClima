@@ -1,14 +1,23 @@
 {% extends "base.html" %}
+{% from 'macros/menu.html' import Menu %}
 
 {% block content %}
     <div class="layout layout-has-sider">
-        <aside class="layout-sider">
-            sidebar
+        <aside class="layout-sider bg-white">
+            {{Menu(menu, 'lugar')}}
         </aside>
-        <section class="layout-content">
-            <main>
-                main
-            </main>
-        </section>
+        <div class="layout">
+            <header class="layout-header" id="header">
+                {% include "partials/header.html" %}
+            </header>
+            <div class="layout layout-has-sider">
+                <aside class="layout-sider">
+                    {% include "partials/UbicationForm.html" %}
+                </aside>
+                <main class="layout-content">
+                    <img width="100%" src="../images/map.png" alt="map" class="img-fluid">
+                </main>
+            </div>
+        </div>
     </div>
 {% endblock %}
