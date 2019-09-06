@@ -6,22 +6,86 @@
       "icon": "World.svg",
       "label": "Lugar",
       "title": "Selecciona la ubicacion de la finca"
-
     },
     {
       "id": "clima",
-      "href": "/clima",
+      "href": "/clima.html",
       "icon": "Winter.svg",
       "label": "Clima",
       "title": "Dashboard"
     },
     {
       "id": "plan",
-      "href": "/plan",
+      "href": "/plan.html",
       "icon": "Book.svg",
       "label": "Planificar",
       "title": "Dashboard"
     }
   ],
-  "sections": []
+  "sections": {
+    "plan": [
+      {
+        "id": "lugar.compare",
+        "href": "/",
+        "icon": "growth.svg",
+        "label": "Comparación"
+      },
+      {
+        "id": "lugar.garden",
+        "href": "/",
+        "icon": "garden.svg",
+        "label": "Recomendaciones"
+      },
+      {
+        "id": "lugar.development",
+        "href": "/",
+        "icon": "document.svg",
+        "label": "Plan de Desarrollo"
+      },
+      {
+        "id": "lugar.budget",
+        "href": "/",
+        "icon": "investment.svg",
+        "label": "Generar Presupuesto"
+      }
+    ],
+    "lugar": [
+      {
+        "id": "lugar.info",
+        "href": "/",
+        "icon": "information.svg",
+        "label": "Informacion General"
+      },
+      {
+        "id": "lugar.rainfall",
+        "href": "/",
+        "icon": "rainfall.svg",
+        "label": "Precipitacion"
+      },
+      {
+        "id": "lugar.temp",
+        "href": "/",
+        "icon": "celsius.svg",
+        "label": "Temperatura"
+      },
+      {
+        "id": "lugar.flair",
+        "href": "/",
+        "icon": "seeding.svg",
+        "label": "Aptitud del Cacao"
+      },
+      {
+        "id": "lugar.gradient",
+        "href": "/",
+        "icon": "planting.svg",
+        "label": "Gradiente de Impacto"
+      },
+      {
+        "id": "lugar.watering",
+        "href": "/",
+        "icon": "watering.svg",
+        "label": "Practicas"
+      }
+    ]
+  }
 }

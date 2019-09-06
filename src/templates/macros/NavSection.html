@@ -1,0 +1,26 @@
+{% macro Nav(navigation, activePage) %}
+<section>
+    <div class="bg-default py-3 text-center mb-3">
+        <h4 class="m-0">Dashboard</h4>
+    </div>
+    <div class="nav nav-pill"
+         role="tablist"
+         aria-orientation="vertical">
+        {% for item in navigation %}
+        <a role="tab"
+           href="{{item.href}}"
+           {% if activePage == item.id %}
+           class="nav-link active"
+           aria-selected="true"
+           {% else %}
+           class="nav-link"
+           aria-selected="false"
+           {% endif %}
+           title="{{item.label}}">
+            {% include "../svg/" + item.icon %}
+            <span class="ml-3">{{item.label}}</span>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+{% endmacro %}

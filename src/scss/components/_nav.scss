@@ -1,0 +1,21 @@
+.nav-pill {
+  flex-direction: column;
+
+  .nav-link {
+    padding: 1em .5em 1em 1.5em;
+    color: $gray;
+    display: flex;
+    align-items: center;
+
+    &.active{
+      color: $dark;
+      font-weight: 500;
+      box-shadow: 0 0 23px rgba(0, 0, 0, 0.1);
+    }
+
+    > svg {
+      width: 2em;
+      height: 2em;
+    }
+  }
+}
