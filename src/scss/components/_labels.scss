@@ -1,0 +1,16 @@
+.label-with-icon{
+  display: flex;
+  align-items: center;
+
+  .label-icon{
+    width: 1.5em;
+    display: inline-block;
+    svg{
+      width: 100%;
+    }
+  }
+  .label-text{
+    display: inline-block;
+    margin-left: .75em;
+  }
+}
