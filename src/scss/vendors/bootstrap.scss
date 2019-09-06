@@ -14,11 +14,10 @@ $theme-colors: (
 
 // Breadcrumbs
 
-$breadcrumb-padding-y:              .75rem !default;
-$breadcrumb-padding-x:              1rem !default;
-$breadcrumb-item-padding-x:         .5rem !default;
-
-$breadcrumb-margin-bottom:          1rem !default;
+$breadcrumb-padding-y:              0;
+$breadcrumb-padding-x:              0;
+$breadcrumb-item-padding-x:         .75rem;
+$breadcrumb-margin-bottom:          0;
 
 $breadcrumb-bg:                     $white;
 $breadcrumb-divider-color:          $gray;

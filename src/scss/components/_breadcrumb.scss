@@ -1,0 +1,14 @@
+.breadcrumb{
+  color: $gray;
+  align-items: center;
+
+  .breadcrumb-item {
+    text-transform: uppercase;
+
+    a {
+      color: $gray;
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+}
