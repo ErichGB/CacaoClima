@@ -9,82 +9,82 @@
     },
     {
       "id": "clima",
-      "href": "/clima.html",
+      "href": "/clima/",
       "icon": "Winter.svg",
       "label": "Clima",
       "title": "Dashboard"
     },
     {
       "id": "plan",
-      "href": "/plan.html",
+      "href": "/plan/",
       "icon": "Book.svg",
       "label": "Planificar",
       "title": "Dashboard"
     }
   ],
   "sections": {
-    "plan": [
+    "clima": [
       {
-        "id": "lugar.compare",
-        "href": "/",
-        "icon": "growth.svg",
-        "label": "Comparación"
-      },
-      {
-        "id": "lugar.garden",
-        "href": "/",
-        "icon": "garden.svg",
-        "label": "Recomendaciones"
-      },
-      {
-        "id": "lugar.development",
-        "href": "/",
-        "icon": "document.svg",
-        "label": "Plan de Desarrollo"
-      },
-      {
-        "id": "lugar.budget",
-        "href": "/",
-        "icon": "investment.svg",
-        "label": "Generar Presupuesto"
-      }
-    ],
-    "lugar": [
-      {
-        "id": "lugar.info",
-        "href": "/",
+        "id": "clima.info",
+        "href": "/clima/",
         "icon": "information.svg",
-        "label": "Informacion General"
+        "label": "Información General"
       },
       {
-        "id": "lugar.rainfall",
-        "href": "/",
+        "id": "clima.rainfall",
+        "href": "/clima/Precipitacion.html",
         "icon": "rainfall.svg",
-        "label": "Precipitacion"
+        "label": "Precipitación"
       },
       {
-        "id": "lugar.temp",
-        "href": "/",
+        "id": "clima.temp",
+        "href": "/clima/Temperatura.html",
         "icon": "celsius.svg",
         "label": "Temperatura"
       },
       {
-        "id": "lugar.flair",
-        "href": "/",
+        "id": "clima.flair",
+        "href": "/clima/Aptitud.html",
         "icon": "seeding.svg",
         "label": "Aptitud del Cacao"
       },
       {
-        "id": "lugar.gradient",
-        "href": "/",
+        "id": "clima.gradient",
+        "href": "/clima/Gradiente.html",
         "icon": "planting.svg",
         "label": "Gradiente de Impacto"
       },
       {
-        "id": "lugar.watering",
-        "href": "/",
+        "id": "clima.practice",
+        "href": "/clima/Practicas.html",
         "icon": "watering.svg",
         "label": "Practicas"
+      }
+    ],
+    "plan": [
+      {
+        "id": "plan.compare",
+        "href": "/plan/",
+        "icon": "growth.svg",
+        "label": "Comparación"
+      },
+      {
+        "id": "plan.garden",
+        "href": "/plan/Recomendaciones.html",
+        "icon": "garden.svg",
+        "label": "Recomendaciones"
+      },
+      {
+        "id": "plan.development",
+        "href": "/plan/",
+        "icon": "document.svg",
+        "label": "Plan de Desarrollo"
+      },
+      {
+        "id": "plan.budget",
+        "href": "/plan/GenerarPresupuesto.html",
+        "icon": "investment.svg",
+        "label": "Generar Presupuesto"
       }
     ]
   }
