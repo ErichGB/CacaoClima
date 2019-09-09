@@ -1,0 +1,17 @@
+{% macro Steps(classes = []) %}
+<nav class="steps {{ classes | join(' ') }}">{{ caller() }}</nav>
+{% endmacro %}
+
+{% macro Step(info, active) %}
+<div class="steps-item{% if active %} steps-item-active{% endif %}">
+    <div class="steps-item-container"
+         title="{{label}}">
+        <a href="{{info.href}}"
+           class="steps-item-content">
+            <div class="steps-item-title text-truncate mw-100">{{info.label}}</div>
+        </a>
+        <div class="steps-item-tail"></div>
+        <div class="steps-item-icon">{% include "../svg/check.svg" %}</div>
+    </div>
+</div>
+{% endmacro %}

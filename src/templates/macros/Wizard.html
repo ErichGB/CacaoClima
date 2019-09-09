@@ -1,0 +1,31 @@
+{% from 'macros/Steps.html' import Steps, Step %}
+
+{% macro Wizard(steps, activeIndex = 1) %}
+<div class="row align-items-center py-4">
+    <div class="col">
+        {% call Steps(['py-3']) %}
+            {% for step in steps %}
+                {{Step(step , loop.index <= activeIndex )}}
+            {% endfor %}
+        {% endcall %}
+    </div>
+
+    <div class="col col-md-auto">
+        {% if steps | length == activeIndex  %}
+        <a href="/" class="btn btn-primary">
+            <span class="d-inline-block mr-2">Salir</span>
+            <span class="d-inline-block" style="width: 1.5rem">
+                {% include "../svg/arrow.svg" %}
+            </span>
+        </a>
+        {% else %}
+        <a href="{{steps[activeIndex].href}}" class="btn btn-primary">
+            <span class="d-inline-block mr-2">Siguiente Paso</span>
+            <span class="d-inline-block" style="width: 1.5rem">
+                {% include "../svg/arrow.svg" %}
+            </span>
+        </a>
+        {% endif %}
+    </div>
+</div>
+{% endmacro %}

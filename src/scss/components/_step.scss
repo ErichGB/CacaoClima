@@ -1,0 +1,94 @@
+.steps {
+  font-size: 0;
+  width: 100%;
+  line-height: 1.5;
+  display: flex;
+
+  &-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    flex: 1;
+
+    &:last-child {
+      flex: none;
+    }
+
+    &:last-child &-tail,
+    &:last-child &-title:after {
+      display: none;
+    }
+
+    &-container{
+      display: inline-block;
+    }
+
+    &-tail {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 14px;
+      padding: 0 14px;
+      margin-left: 50px;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        background: $primary;
+        height: 2px;
+        border-radius: 1px;
+        width: 100%;
+        transition: background 0.3s;
+      }
+    }
+
+    &-icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 36px;
+      background-color: $white;
+      border: 2px solid $primary;
+      color: $primary;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      text-align: center;
+      border-radius: 28px;
+      font-size: 1rem;
+      margin-right: 8px;
+      transition: background-color 0.3s, border-color 0.3s;
+
+      svg {
+        width: 1rem;
+      }
+    }
+
+    $blockClass: &;
+
+    &#{&}-active {
+      #{$blockClass}-title{
+        color: $dark;
+        font-weight: 500;
+      }
+      #{$blockClass}-icon{
+        background-color: $primary;
+        color: $white;
+      }
+    }
+
+    &-content{
+      display: block;
+      text-align: center;
+      margin-bottom: .25rem;
+      width: 100px;
+    }
+
+    &-title{
+      font-size: 1rem;
+      color: #666;
+      display: inline-block;
+      position: relative;
+    }
+  }
+}
