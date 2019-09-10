@@ -1,0 +1,64 @@
+.card-fancy{
+  color: $white;
+  border: 0;
+  margin: 0 !important;
+  padding-left: 2.75rem;
+
+  &-icon{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 2.25rem;
+  }
+
+  &:before{
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &#{&}-blue {
+    background: linear-gradient(180deg, #6CB3F8 0%, #2885DD 100%);
+
+    &:before{
+      background-position-x: right;
+      background-position-y: top;
+      background-image: url("../../images/cloud.png");
+    }
+  }
+
+  &#{&}-orange {
+    background: linear-gradient(180deg, #F4D670 0%, #EBA400 100%);
+
+    &:before{
+      background-position-x: right;
+      background-position-y: top;
+      background-size: auto 100%;
+      background-image: url("../../images/temp.png");
+    }
+  }
+
+  &#{&}-green {
+    background: linear-gradient(0deg, #42A145 0%, #69B76F 100%);
+
+    &:before{
+      background-position-x: -60px;
+      background-position-y: 50px;
+      background-image: url("../../images/aptitud.png");
+    }
+  }
+
+  &#{&}-brown {
+    background: linear-gradient(0deg, #754B20 0%, #AA7E46 100%);
+
+    &:before{
+      background-position-x: 100px;
+      background-position-y: 50px;
+      background-image: url("../../images/gradient.png");
+    }
+  }
+}

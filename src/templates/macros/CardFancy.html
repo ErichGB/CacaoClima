@@ -1,0 +1,19 @@
+{% macro CardFancy(type, title, content, classes = []) %}
+<div class="card card-fancy card-fancy-{{type}} {{ classes | join(' ') }}">
+    <div class="card-fancy-icon">
+        {% if type == 'blue' %}
+        {% include "../svg/rain2.svg" %}
+        {% elif type == 'orange' %}
+        {% include "../svg/celsius.svg" %}
+        {% elif type == 'green' %}
+        {% include "../svg/seeding.svg" %}
+        {% elif type == 'brown' %}
+        {% include "../svg/planting.svg" %}
+        {% endif %}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">{{content}}</p>
+    </div>
+</div>
+{% endmacro %}
