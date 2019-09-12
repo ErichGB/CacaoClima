@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% from 'macros/Ask.html' import Ask %}
+{% from 'macros/menu.html' import Menu %}
+{% from 'macros/Wizard.html' import Wizard %}
+{% from 'macros/NavSection.html' import Nav %}
+
+{% block content %}
+<div id="viewport" class="layout layout-has-sider">
+    <aside class="layout-sider bg-white"
+           style="flex: 0 0 112px; max-width: 112px; min-width: 112px; width: 112px;">
+        {{Menu(menu, 'clima')}}
+    </aside>
+    <div class="layout">
+        <header class="layout-header" id="header">
+            {% include "partials/header.html" %}
+        </header>
+        <div class="layout layout-has-sider">
+            <aside class="layout-sider"
+                   style="flex: 0 0 224px; max-width: 224px; min-width: 224px; width: 224px;">
+                {{ Nav(sections.clima, 'clima.practice') }}
+            </aside>
+
+            <main class="layout-content">
+                <section class="w-100 bg-white"
+                         style="min-height: 100%">
+
+                    <div class="container-fluid">
+                        {{ Wizard(sections.clima, 6) }}
+                    </div>
+
+                    <div class="layout p-3" style="min-height: calc(100vh - 225px)">
+                        <div class="layout-header">
+                            {% include "partials/intro.html" %}
+                        </div>
+                        <div class="layout-content">
+                            {{ Ask(1,'title lol') }}
+                        </div>
+                        <div class="layout-footer">
+                            <nav class="d-flex justify-content-center">
+                                {% include "partials/pagination.html" %}
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</div>
+{% endblock %}
