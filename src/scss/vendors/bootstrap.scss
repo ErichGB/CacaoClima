@@ -18,18 +18,50 @@ $breadcrumb-padding-y:              0;
 $breadcrumb-padding-x:              0;
 $breadcrumb-item-padding-x:         .75rem;
 $breadcrumb-margin-bottom:          0;
-
 $breadcrumb-bg:                     $white;
 $breadcrumb-divider-color:          $gray;
 $breadcrumb-active-color:           $dark;
 $breadcrumb-divider:                url("../../images/Path.svg");
-
 $breadcrumb-border-radius:          0;
 
 // form
 $input-bg:            transparent;
 $input-border-color:  transparent;
 $input-border-radius: 0;
+
+// Buttons
+$btn-padding-y: .65rem;
+$btn-padding-x: 2rem;
+
+// Navs
+
+$nav-link-padding-y:    .75rem;
+$nav-link-padding-x:    2rem;
+//$nav-tabs-border-color: transparent;
+$nav-tabs-border-width: 0;
+
+// Pagination
+$pagination-padding-y:      .75rem;
+$pagination-padding-x:      1rem;
+//$pagination-border-radius:  4px;
+
+$pagination-color:          $dark;
+$pagination-bg:             #E7E9EC;
+$pagination-border-width:   0;
+//$pagination-margin-left:    .75rem;
+$pagination-active-color:   $white;
+$pagination-active-bg:      $dark;
+
+// Tables
+//
+$table-cell-padding:      1.6rem;
+//$table-head-border-color: transparent;
+
+
+// Alerts
+//
+$alert-border-radius: 0;
+$alert-border-width:  0;
 
 // Bootstrap library
 @import "../../../node_modules/bootstrap/scss/bootstrap";
