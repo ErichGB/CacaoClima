@@ -1,0 +1,14 @@
+.intro{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2vw 4vw;
+  min-height: 250px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  color: $white;
+  text-align: center;
+}
