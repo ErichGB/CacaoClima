@@ -4,6 +4,10 @@
   margin: 0 !important;
   padding-left: 2.75rem;
 
+  .card-body{
+    z-index: 2;
+  }
+
   &-icon{
     position: absolute;
     top: 1rem;
@@ -19,6 +23,8 @@
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 0;
+    user-select: unset;
   }
 
   &#{&}-blue {

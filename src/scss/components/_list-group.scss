@@ -1,0 +1,14 @@
+.list-group-dots {
+  .list-group-item {
+    display: flex;
+    align-items: center;
+
+    .list-group-item-dot{
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1rem;
+      border-radius: 50%;
+    }
+  }
+}
