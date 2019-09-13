@@ -1,15 +1,49 @@
-{% macro Ask(num, question, list, options) %}
+{% macro Ask(num, type, question, options) %}
 <div class="media ask">
     <div class="num">{{num}}</div>
     <div class="media-body">
-        <h5 class="mt-0">{{question}}</h5>
-        <ol class="mr-2">
-            <li>Facilis scelerisque lacinia vehicula </li>
-            <li>Facilis scelerisque lacinia vehicula </li>
-            <li>Facilis scelerisque lacinia vehicula </li>
-            <li>Facilis scelerisque lacinia vehicula </li>
-            <li>Facilis scelerisque lacinia vehicula </li>
-        </ol>
+        <p class="m-0">{{question}}</p>
+
+        {% if type == 'radio' %}
+            <div class="btn-group btn-group-toggle font-weight-light" data-toggle="buttons">
+                {% for opt in options %}
+                <label class="btn btn-light">
+                    <input type="radio"
+                           name="options"
+                           id="option1"
+                           autocomplete="off"
+                           checked>{{opt}}
+                </label>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% if type == 'list' %}
+            <ol class="mr-2 font-weight-light">
+                {% for opt in options %}
+                <li>{{opt}} </li>
+                {% endfor %}
+            </ol>
+        {% endif %}
+
+        {% if type == 'unit' %}
+            {% for opt in options %}
+            <div class="input-group font-weight-light">
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div role="separator" class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        {% endif %}
+
     </div>
 </div>
 {% endmacro %}
