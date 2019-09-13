@@ -52,8 +52,8 @@
     background: linear-gradient(0deg, #42A145 0%, #69B76F 100%);
 
     &:before{
-      background-position-x: -60px;
-      background-position-y: 50px;
+      background-position-x: calc(100% + 20px);
+      background-position-y: calc(100% + 20px);
       background-image: url("../../images/aptitud.png");
     }
   }
@@ -62,8 +62,8 @@
     background: linear-gradient(0deg, #754B20 0%, #AA7E46 100%);
 
     &:before{
-      background-position-x: 100px;
-      background-position-y: 50px;
+      background-position-x: calc(100% + 20px);
+      background-position-y: calc(100% + 20px);
       background-image: url("../../images/gradient.png");
     }
   }
