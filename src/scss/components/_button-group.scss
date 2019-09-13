@@ -1,0 +1,16 @@
+.btn-group {
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+  > .btn:not(:last-child):not(.dropdown-toggle),
+  > .btn-group:not(:last-child) > .btn {
+    border-radius: .25rem;
+  }
+
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) > .btn {
+    border-radius: .25rem;
+  }
+}

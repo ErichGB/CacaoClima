@@ -1,0 +1,37 @@
+.media-numeric {
+  background-color: $light;
+
+  .media-title{
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin: 0;
+  }
+
+  .media-left{
+    background-color: $dark;
+    color: $white;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .media-right{
+    width: 3rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .media-body{
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    min-height: 4rem;
+  }
+}
