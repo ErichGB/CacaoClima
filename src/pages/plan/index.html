@@ -2,6 +2,7 @@
 {% from 'macros/menu.html' import Menu %}
 {% from 'macros/Wizard.html' import Wizard %}
 {% from 'macros/NavSection.html' import Nav %}
+{% from 'macros/Ask.html' import Ask %}
 
 {% block content %}
 <div id="viewport" class="layout layout-has-sider">
@@ -16,7 +17,7 @@
         <div class="layout layout-has-sider">
             <aside class="layout-sider"
                    style="flex: 0 0 224px; max-width: 224px; min-width: 224px; width: 224px;">
-                {{Nav(sections.plan, 'plan.compare')}}
+                {{ Nav(sections.plan, 'plan.compare') }}
             </aside>
             <main class="layout-content">
                 <section class="w-100 bg-white"
@@ -24,8 +25,32 @@
                     <div class="container-fluid">
                         {{ Wizard(sections.plan, 1) }}
                     </div>
-                    <div>
+                    <div class="container-fluid mt-4">
                         <h4 class="text-center">SELECCIONE LA RESPUESTA A SU DERECHA DE LAS PRACTICAS QUE USTED REALIZA</h4>
+                        <div class="row mt-5 mb-3">
+                            <div class="col">
+                                <p class="semibold text-center lead">Recomendaciones Dadas</p>
+                            </div>
+                            <div class="col">
+                                <p class="semibold text-center lead">Actividades que realiza  en su finca</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col border-right px-5 py-4">
+                                {{ Ask(1, 'list', 'questions title', ['uno', 'dos', 'tres']) }}
+                            </div>
+                            <div class="col px-5 py-4">
+                                {{ Ask(1, 'radio', 'questions title', ['uno', 'dos', 'tres']) }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col border-right px-5 py-4">
+                                {{ Ask(1, 'list', 'questions title', ['uno', 'dos', 'tres']) }}
+                            </div>
+                            <div class="col px-5 py-4">
+                                {{ Ask(1, 'unit', '¿Non error facilisi mattis volutpat facilis auctor sapiente?', ['uno']) }}
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
