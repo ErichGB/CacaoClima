@@ -1,31 +1,32 @@
-let project = {};
-
 (function ($) {
     "use strict";
 
-    $(document).ready(function () {
-        project = {
-
+    $(document).ready(() => {
+        const project = {
             initialized: false,
             resizeHandlers: [],
 
-            init: function () {
-                const $tis = this;
-
-                if (!$tis.initialized) {
-                    $tis.initialized = true;
-                    $tis.build();
-                    $tis.events();
+            init: function() {
+                if (!this.initialized) {
+                    this.initialized = true;
+                    this.tabs();
+                    this.collapse();
+                    this.events();
                 }
             },
 
-            build: function () {
-                const $tis = this;
+            tabs: () => {
+                $('a[data-toggle="tab"]').on('click', () => {
+                    $(this).tab('show')
+                })
+            },
+
+            collapse: () => {
+                $('.collapse').collapse()
             },
 
             events: function () {
-                const $tis = this;
-                $tis.windowResize();
+                // $tis.windowResize();
             },
 
             windowResize: function(){

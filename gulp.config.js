@@ -8,7 +8,7 @@ module.exports = function() {
     const bower   = {
         json: require('./bower.json'),
         directory: './bower_components/',
-        ignorePath: '../../'
+        // ignorePath: '../../'
     };
 
     const config = {
