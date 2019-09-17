@@ -1,14 +1,27 @@
 .breadcrumb{
   color: $gray;
-  align-items: center;
 
   .breadcrumb-item {
     text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
 
     a {
-      color: $gray;
+      color: inherit;
       display: inline-flex;
       align-items: center;
+    }
+
+    .icon {
+      display: block;
+      width: 2rem;
+    }
+
+    + .breadcrumb-item {
+      &:before{
+        opacity: .35;
+        height: 1rem;
+      }
     }
   }
 }
