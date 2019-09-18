@@ -40,3 +40,18 @@
 ._highlight{
     background: #fffdcd !important;
 }
+
+.title-highlight{
+    position: relative;
+    line-height: 1.75em;
+
+    &:after{
+        content: " ";
+        display: block;
+        height: 4px;
+        width: 10rem;
+        position: absolute;
+        bottom: -4px;
+        background-color: $primary;
+    }
+}

@@ -24,10 +24,14 @@
 </head>
 <body>
     
-<div id="viewport" class="layout layout-has-sider">
-    <aside class="layout-sider bg-white"
-           style="flex: 0 0 112px; max-width: 112px; min-width: 112px; width: 112px;">
-        
+    
+    <div class="layout layout-has-sider "
+      id="viewport" >
+
+        <aside class="layout-sider bg-white border-right"
+       style="flex: 0 0 112px; max-width: 112px; min-width: 112px; width: 112px;"
+       >
+            
 <nav class="nav flex-column">
     <a class="nav-card brand"
        style="background-image: url('../../images/logo.png')"
@@ -84,20 +88,23 @@
     
 </nav>
 
-    </aside>
-    <div class="layout">
-        <header class="layout-header" id="header">
-            <div>
+        </aside>
+
+        <div class="layout "
+     >
+            <header class="layout-header "
+         id="header" >
+                <div>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
                 <a href="/">
-                    <svg viewBox="0 0 30 29"
+                    <span class="icon"><svg viewBox="0 0 30 29"
      fill="currentColor"
      xmlns="http://www.w3.org/2000/svg">
     <path d="M15.386 2.14329L28.6415 12.0524C28.9653 12.2945 29.0356 12.7587 28.7985 13.0892C28.6561 13.2877 28.4354 13.3928 28.2116 13.3928C28.0626 13.3928 27.9123 13.3463 27.783 13.2495L14.9568 3.66124L2.13051 13.2496C1.8068 13.4915 1.3521 13.4198 1.11501 13.0892C0.877913 12.7587 0.948261 12.2945 1.27203 12.0524L14.5276 2.14329C14.7831 1.95224 15.1304 1.95224 15.386 2.14329ZM24.3817 14.1046C24.3817 13.7115 24.7064 13.3929 25.1067 13.3929C25.5071 13.3929 25.8317 13.7115 25.8318 14.1046V26.1454C25.8318 26.5385 25.5072 26.8571 25.1068 26.8571H17.857C17.4755 26.8571 17.1634 26.5676 17.1348 26.2002C17.1331 26.1838 17.132 26.1659 17.132 26.1454V19.2495C17.132 18.0721 16.1562 17.1141 14.9568 17.1141C13.7573 17.1141 12.7815 18.072 12.7815 19.2495V26.1454C12.7815 26.166 12.7804 26.1842 12.7787 26.2008C12.7498 26.568 12.4378 26.8571 12.0565 26.8571H4.80674C4.4064 26.8571 4.08175 26.5385 4.08175 26.1454V14.1046C4.08175 13.7116 4.4064 13.3929 4.80674 13.3929C5.20708 13.3929 5.53172 13.7116 5.53172 14.1046V25.4336H11.3316V19.2495C11.3316 17.2872 12.9579 15.6905 14.9568 15.6905C16.9556 15.6905 18.582 17.287 18.582 19.2495V25.4336H24.3817V14.1046Z"/>
 </svg>
-
+</span>
                     <span class="ml-2">Home</span>
                 </a>
             </li>
@@ -107,17 +114,20 @@
                 </a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
-                <span>Informacion General</span>
+                <span class="semibold">Informacion General</span>
             </li>
         </ol>
     </nav>
 </div>
 
-        </header>
-        <div class="layout layout-has-sider">
-            <aside class="layout-sider"
-                   style="flex: 0 0 224px; max-width: 224px; min-width: 224px; width: 224px;">
-                
+            </header>
+
+            <div class="layout layout-has-sider "
+     >
+                <aside class="layout-sider d-none d-xl-block"
+       style="flex: 0 0 224px; max-width: 224px; min-width: 224px; width: 224px;"
+       >
+                    
 <section>
     <div class="bg-default py-3 text-center mb-3">
         <h4 class="m-0">Dashboard</h4>
@@ -215,12 +225,16 @@
     </div>
 </section>
 
-            </aside>
-            <main class="layout-content">
-                <section class="w-100 bg-white" style="min-height: 100%">
+                </aside>
 
-                    <div class="container-fluid">
-                        
+                <section class="layout-content "
+         >
+
+                    <section class="w-100 bg-white"
+                             style="min-height: 100%">
+
+                        <div class="container-fluid">
+                            
 <div class="row align-items-center py-4">
     <div class="col">
         
@@ -306,7 +320,7 @@
 
     </div>
 
-    <div class="col col-md-auto">
+    <div class="col col-md-auto pl-0 pl-xl-4">
         
         <a href="/plan/GenerarPresupuesto.html" class="btn btn-primary">
             <span class="d-inline-block mr-2">Siguiente Paso</span>
@@ -323,1037 +337,1044 @@
     </div>
 </div>
 
-                    </div>
-
-                    <div class="layout">
-                        <div class="layout-header">
-                            <div class="p-4 text-center">
-                                <h4>Seleccione las fechas para llevar a cabo las recomendaciones</h4>
-                            </div>
                         </div>
-                        <div class="layout-content">
-                            <div class="p-4">
-                                <div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">1</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart1">De:</label>
-                                            <select class="custom-select form-select" id="selectStart1">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd1">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd1">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">2</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                        
+        <div class="layout mt-3 px-4"
+     >
+            <header class="layout-header py-5"
+        >
+                <h4 class="text-center text-uppercase">Seleccione las fechas para llevar a cabo las recomendaciones</h4>
+            </header>
 
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart2">De:</label>
-                                            <select class="custom-select form-select" id="selectStart2">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd2">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd2">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">3</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart3">De:</label>
-                                            <select class="custom-select form-select" id="selectStart3">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd3">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd3">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">4</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart4">De:</label>
-                                            <select class="custom-select form-select" id="selectStart4">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd4">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd4">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">5</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart5">De:</label>
-                                            <select class="custom-select form-select" id="selectStart5">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd5">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd5">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">6</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart6">De:</label>
-                                            <select class="custom-select form-select" id="selectStart6">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd6">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd6">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">7</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart7">De:</label>
-                                            <select class="custom-select form-select" id="selectStart7">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd7">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd7">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">8</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart8">De:</label>
-                                            <select class="custom-select form-select" id="selectStart8">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd8">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd8">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">9</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart9">De:</label>
-                                            <select class="custom-select form-select" id="selectStart9">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd9">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd9">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">10</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart10">De:</label>
-                                            <select class="custom-select form-select" id="selectStart10">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd10">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd10">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">11</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart11">De:</label>
-                                            <select class="custom-select form-select" id="selectStart11">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd11">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd11">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">12</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart12">De:</label>
-                                            <select class="custom-select form-select" id="selectStart12">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd12">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd12">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">13</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart13">De:</label>
-                                            <select class="custom-select form-select" id="selectStart13">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd13">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd13">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div><div class="row align-items-center mt-3">
-                                    <div class="col col-sm-8">
-                                        <div class="media media-numeric">
-                                            <div class="media-left">14</div>
-                                            <div class="media-body text-truncate">
-                                                <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col col-sm-4">
-                                        <form class="form-inline justify-content-end ">
-                                            <label class="mr-3 lead semibold" for="selectStart14">De:</label>
-                                            <select class="custom-select form-select" id="selectStart14">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                            <label class="mx-3 lead semibold" for="selectEnd14">Hasta:</label>
-                                            <select class="custom-select form-select"
-                                                    id="selectEnd14">
-                                                
-                                                <option value="Enero" >Enero</option>
-                                                
-                                                <option value="Febrero" >Febrero</option>
-                                                
-                                                <option value="Marzo" >Marzo</option>
-                                                
-                                                <option value="Abril" >Abril</option>
-                                                
-                                                <option value="Mayo" >Mayo</option>
-                                                
-                                                <option value="Junio" >Junio</option>
-                                                
-                                                <option value="Julio" >Julio</option>
-                                                
-                                                <option value="Agosto" >Agosto</option>
-                                                
-                                                <option value="Septiembre" >Septiembre</option>
-                                                
-                                                <option value="Octubre" >Octubre</option>
-                                                
-                                                <option value="Noviembre" >Noviembre</option>
-                                                
-                                                <option value="Diciembre" >Diciembre</option>
-                                                
-                                            </select>
-                                        </form>
-                                    </div>
+            <section class="layout-content "
+         >
+                <div style="min-height: calc(100vh - 400px)">
+                    <div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">1</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="layout-footer">
-                            <div class="px-4 pb-5 text-right">
-                                <a href="/plan/GenerarPresupuesto.html" class="btn btn-primary">
-                                    <span class="d-inline-block mr-2">Generar Presupuesto</span>
-                                    <span class="d-inline-block" style="width: 1.5rem"><svg viewBox="0 0 20 14"
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart1">De:</label>
+                                <select class="custom-select form-select" id="selectStart1">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd1">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd1">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">2</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart2">De:</label>
+                                <select class="custom-select form-select" id="selectStart2">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd2">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd2">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">3</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart3">De:</label>
+                                <select class="custom-select form-select" id="selectStart3">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd3">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd3">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">4</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart4">De:</label>
+                                <select class="custom-select form-select" id="selectStart4">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd4">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd4">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">5</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart5">De:</label>
+                                <select class="custom-select form-select" id="selectStart5">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd5">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd5">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">6</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart6">De:</label>
+                                <select class="custom-select form-select" id="selectStart6">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd6">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd6">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">7</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart7">De:</label>
+                                <select class="custom-select form-select" id="selectStart7">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd7">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd7">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">8</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart8">De:</label>
+                                <select class="custom-select form-select" id="selectStart8">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd8">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd8">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">9</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart9">De:</label>
+                                <select class="custom-select form-select" id="selectStart9">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd9">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd9">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">10</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart10">De:</label>
+                                <select class="custom-select form-select" id="selectStart10">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd10">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd10">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">11</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart11">De:</label>
+                                <select class="custom-select form-select" id="selectStart11">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd11">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd11">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">12</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart12">De:</label>
+                                <select class="custom-select form-select" id="selectStart12">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd12">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd12">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">13</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart13">De:</label>
+                                <select class="custom-select form-select" id="selectStart13">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd13">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd13">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div><div class="row align-items-center mt-3">
+                        <div class="col col-7 col-xl-8">
+                            <div class="media media-numeric">
+                                <div class="media-left">14</div>
+                                <div class="media-body text-truncate">
+                                    <p class="media-title text-truncate">Elaborar viviero con plantas de cacao mejoras geneticamente</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
+                            <form class="form-inline justify-content-end ">
+                                <label class="mr-3 lead semibold" for="selectStart14">De:</label>
+                                <select class="custom-select form-select" id="selectStart14">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                                <label class="mx-3 lead semibold" for="selectEnd14">Hasta:</label>
+                                <select class="custom-select form-select"
+                                        id="selectEnd14">
+                                    
+                                    <option value="Enero" >Enero</option>
+                                    
+                                    <option value="Febrero" >Febrero</option>
+                                    
+                                    <option value="Marzo" >Marzo</option>
+                                    
+                                    <option value="Abril" >Abril</option>
+                                    
+                                    <option value="Mayo" >Mayo</option>
+                                    
+                                    <option value="Junio" >Junio</option>
+                                    
+                                    <option value="Julio" >Julio</option>
+                                    
+                                    <option value="Agosto" >Agosto</option>
+                                    
+                                    <option value="Septiembre" >Septiembre</option>
+                                    
+                                    <option value="Octubre" >Octubre</option>
+                                    
+                                    <option value="Noviembre" >Noviembre</option>
+                                    
+                                    <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="layout-content py-5 text-right"
+        >
+                <a href="/plan/GenerarPresupuesto.html" class="btn btn-primary">
+                    <span class="d-inline-block mr-2">Generar Presupuesto</span>
+                    <span class="d-inline-block" style="width: 1.5rem"><svg viewBox="0 0 20 14"
      fill="currentColor"
      xmlns="http://www.w3.org/2000/svg">
     <path d="M13.4678 0.21055C13.1953 -0.0701834 12.7418 -0.0701834 12.4598 0.21055C12.1874 0.481799 12.1874 0.933249 12.4598 1.20387L17.5707 6.29184H0.705621C0.31248 6.29248 0 6.60356 0 6.99494C0 7.38632 0.31248 7.70752 0.705621 7.70752H17.5707L12.4598 12.786C12.1874 13.0668 12.1874 13.5188 12.4598 13.7894C12.7418 14.0702 13.1959 14.0702 13.4678 13.7894L19.7885 7.49697C20.0705 7.22572 20.0705 6.77428 19.7885 6.50366L13.4678 0.21055Z"/>
 </svg>
 </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                </a>
+            </footer>
+        </div>
+    
+                    </section>
 
                 </section>
-            </main>
+            </div>
         </div>
     </div>
-</div>
+
 
 
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/popper.js/dist/umd/popper.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
 
     <!-- build:js js/app.js -->

@@ -48,22 +48,48 @@
                     <div class="row mt-4">
                         <div class="col-sm-8">
                             <div class="shadow-lg">
-                                <div class="alert alert-info">La informacion presentada es valida para el departamento de Matagalpa</div>
                                 <img src="../../images/map3.jpg" class="w-100 img-fluid" alt="">
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            {{ Legend('Leyenda de temperatura', [], ['mt-4', 'shadow-lg', 'border-0']) }}
+                            {{ Legend('Leyenda de temperatura', [], ['shadow-lg', 'border-0']) }}
                         </div>
                     </div>
 
                     <div class="mt-4">
-                        <h4>Descripción del clima en tu area</h4>
+                        <h5 class="title-highlight mb-4">Descripción del clima en tu area</h5>
                         <p>Rerum pretium magnam ea numquam integer sodales, condimentum, adipisci? Felis provident cubilia, mauris incidunt dignissimos quaerat venenatis eos. Earum veniam eiusmod dolorum sem. Debitis ipsum praesentium amet. Exercitation nonummy vitae, minus aperiam praesentium, commodi dolor eros. Eveniet eius proident ipsum. Potenti, ridiculus tortor? Nam aute hendrerit dolore ea harum sociis turpis neque aspernatur dapibus laborum tellus ad omnis consectetuer. Habitasse! In fringilla itaque dignissimos eleifend doloremque tristique iste. Eleifend penatibus! Parturient voluptates congue tempore doloremque, habitasse sapiente condimentum cubilia blanditiis, suscipit? Minim habitasse cillum ultricies? Lacus, laboriosam, laborum euismod, magnis! Dicta vel quo quos adipisicing placerat? Maiores ratione erat, sollicitudin.</p>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+            <div class="tab-pane fade"
+                 id="nav-profile"
+                 role="tabpanel"
+                 aria-labelledby="nav-profile-tab">
+                <div class="px-5 py-3">
+                    <div style="height: 136px">
+                        {% call CardFancy('orange', '¿Que es temperatura?', '', ['h-100', 'pr-5']) %}
+                        <p class="mt-2" style="margin-right: 20%">Se llama temperatura a uno de los elementos constitutivos del clima que se refiere al grado de calor específico del aire en un lugar y momento determinados así como la evolución temporal y espacial de dicho elemento en las distintas zonas climáticas.</p>
+                        {% endcall %}
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-sm-8">
+                            <div class="shadow-lg">
+                                <img src="../../images/map3.jpg" class="w-100 img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            {{ Legend('Leyenda de temperatura', [], ['shadow-lg', 'border-0']) }}
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h5 class="title-highlight mb-4">Descripción del clima en tu area</h5>
+                        <p>Rerum pretium magnam ea numquam integer sodales, condimentum, adipisci? Felis provident cubilia, mauris incidunt dignissimos quaerat venenatis eos. Earum veniam eiusmod dolorum sem. Debitis ipsum praesentium amet. Exercitation nonummy vitae, minus aperiam praesentium, commodi dolor eros. Eveniet eius proident ipsum. Potenti, ridiculus tortor? Nam aute hendrerit dolore ea harum sociis turpis neque aspernatur dapibus laborum tellus ad omnis consectetuer. Habitasse! In fringilla itaque dignissimos eleifend doloremque tristique iste. Eleifend penatibus! Parturient voluptates congue tempore doloremque, habitasse sapiente condimentum cubilia blanditiis, suscipit? Minim habitasse cillum ultricies? Lacus, laboriosam, laborum euismod, magnis! Dicta vel quo quos adipisicing placerat? Maiores ratione erat, sollicitudin.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     {% endcall %}
 {% endblock %}

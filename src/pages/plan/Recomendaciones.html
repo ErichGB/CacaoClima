@@ -1,92 +1,107 @@
 {% extends "base.html" %}
 
 {% from 'macros/_viewport.html' import Viewport %}
+{% from 'macros/Layout.html' import Layout, Header, Content, Footer %}
 
 {% block content %}
     {% call Viewport(data, 'plan', 'garden', 2) %}
-        <div class="container-fluid">
-            <h4 class="text-center">Recomendaciones sugeridas en base a las respuestas proporcionadas</h4>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="p-3">
-                        <h5>Te presentamos Propuestas</h5>
-                        <p>Rerum pretium magnam ea numquam integer sodales, condimentum, adipisci? Felis provident cubilia, mauris incidunt dignissimos quaerat venenatis eos. Earum veniam eiusmod dolorum sem. Debitis ipsum praesentium amet.</p>
-                        <img src="../../images/cacao.jpg" class="mx-auto" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-8">
-                    <div class="accordion" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <div class="media media-numeric"
-                                     data-toggle="collapse"
-                                     data-target="#collapseOne"
-                                     aria-expanded="false"
-                                     aria-controls="collapseOne">
-                                    <div class="media-left">1</div>
-                                    <div class="media-body text-truncate">
-                                        <p class="media-title">Realizar asocios de cultivos de cacao con otras especies</p>
-                                    </div>
-                                    <div class="media-right">
-                                        {% include "svg/chevron.svg" %}
-                                    </div>
-                                </div>
-                            </div>
+        {% call Layout(false, ['mt-3', 'px-4']) %}
+            {% call Header(['py-5']) %}
+                <h4 class="text-center text-uppercase">Recomendaciones sugeridas en base a las respuestas proporcionadas</h4>
+            {% endcall %}
 
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <img src="../../images/cacao2.jpg" alt="" class="img-fluid w-100 mb-3">
-                                    <p class="m-0">Facilisis ea, rutrum taciti saepe quisque vivamus aenean nihil mollis tempora, cillum eleifend penatibus tempora vero suscipit incididunt distinctio diamlorem. Dictum quisquam iusto! Ultricies, nisi natoque porttitor nostra platea vel, deleniti beatae nascetur cupiditate? Habitasse hendrerit adipisci dapibus. Reiciendis fugit molestie excepturi, laborum torquent, consectetuer, illo eget wisi, lectus habitant, interdum duis, exercitation placerat volutpat rutrum, et, fermentum quisque fugiat occaecat cursus molestias imperdiet, laudantium, tortor necessitatibus quas ut! Hymenaeos. Asperiores montes, dicta commodo accumsan varius dicta sint excepteur expedita, quos. Ratione magni voluptates tempore, diamlorem aut elit. Tellus tempus, non class! Quisque cupiditate omnis fringilla, aut maxime! Quae, praesent</p>
-                                </div>
+            {% call Content() %}
+                <div style="min-height: calc(100vh - 420px)">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="p-3">
+                                <h5 class="title-highlight mb-4">Te presentamos Propuestas</h5>
+                                <p>Rerum pretium magnam ea numquam integer sodales, condimentum, adipisci? Felis provident cubilia, mauris incidunt dignissimos quaerat venenatis eos. Earum veniam eiusmod dolorum sem. Debitis ipsum praesentium amet.</p>
+                                <img src="../../images/cacao.jpg" class="mx-auto" alt="">
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <div class="media media-numeric"
-                                     data-toggle="collapse"
-                                     data-target="#collapseTwo"
-                                     aria-expanded="false"
-                                     aria-controls="collapseTwo">
-                                    <div class="media-left">2</div>
-                                    <div class="media-body text-truncate">
-                                        <p class="media-title">Realizar asocios de cultivos de cacao con otras especies</p>
+                        <div class="col-sm-8">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <div class="media media-numeric"
+                                             data-toggle="collapse"
+                                             data-target="#collapseOne"
+                                             aria-expanded="false"
+                                             aria-controls="collapseOne">
+                                            <div class="media-left">1</div>
+                                            <div class="media-body text-truncate">
+                                                <p class="media-title">Realizar asocios de cultivos de cacao con otras especies</p>
+                                            </div>
+                                            <div class="media-right">
+                                                {% include "svg/chevron.svg" %}
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="media-right">
-                                        {% include "svg/chevron.svg" %}
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <div class="media media-numeric"
-                                     data-toggle="collapse"
-                                     data-target="#collapseThree"
-                                     aria-expanded="false"
-                                     aria-controls="collapseThree">
-                                    <div class="media-left">2</div>
-                                    <div class="media-body text-truncate">
-                                        <p class="media-title">Realizar asocios de cultivos de cacao con otras especies</p>
-                                    </div>
-                                    <div class="media-right">
-                                        {% include "svg/chevron.svg" %}
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <img src="../../images/cacao2.jpg" alt="" class="img-fluid w-100 mb-3">
+                                            <p class="m-0">Facilisis ea, rutrum taciti saepe quisque vivamus aenean nihil mollis tempora, cillum eleifend penatibus tempora vero suscipit incididunt distinctio diamlorem. Dictum quisquam iusto! Ultricies, nisi natoque porttitor nostra platea vel, deleniti beatae nascetur cupiditate? Habitasse hendrerit adipisci dapibus. Reiciendis fugit molestie excepturi, laborum torquent, consectetuer, illo eget wisi, lectus habitant, interdum duis, exercitation placerat volutpat rutrum, et, fermentum quisque fugiat occaecat cursus molestias imperdiet, laudantium, tortor necessitatibus quas ut! Hymenaeos. Asperiores montes, dicta commodo accumsan varius dicta sint excepteur expedita, quos. Ratione magni voluptates tempore, diamlorem aut elit. Tellus tempus, non class! Quisque cupiditate omnis fringilla, aut maxime! Quae, praesent</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <div class="media media-numeric"
+                                             data-toggle="collapse"
+                                             data-target="#collapseTwo"
+                                             aria-expanded="false"
+                                             aria-controls="collapseTwo">
+                                            <div class="media-left">2</div>
+                                            <div class="media-body text-truncate">
+                                                <p class="media-title">Realizar asocios de cultivos de cacao con otras especies</p>
+                                            </div>
+                                            <div class="media-right">
+                                                {% include "svg/chevron.svg" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <div class="media media-numeric"
+                                             data-toggle="collapse"
+                                             data-target="#collapseThree"
+                                             aria-expanded="false"
+                                             aria-controls="collapseThree">
+                                            <div class="media-left">3</div>
+                                            <div class="media-body text-truncate">
+                                                <p class="media-title">Realizar asocios de cultivos de cacao con otras especies</p>
+                                            </div>
+                                            <div class="media-right">
+                                                {% include "svg/chevron.svg" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            {% endcall %}
+
+            {% call Footer() %}
+                <div class="text-right my-4">
+                    <button class="btn btn-primary">Planificar</button>
+                </div>
+            {% endcall %}
+
+        {% endcall %}
     {% endcall %}
 {% endblock %}

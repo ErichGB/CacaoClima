@@ -24,10 +24,14 @@
 </head>
 <body>
     
-<div id="viewport" class="layout layout-has-sider">
-    <aside class="layout-sider bg-white"
-           style="flex: 0 0 112px; max-width: 112px; min-width: 112px; width: 112px;">
-        
+    
+    <div class="layout layout-has-sider "
+      id="viewport" >
+
+        <aside class="layout-sider bg-white border-right"
+       style="flex: 0 0 112px; max-width: 112px; min-width: 112px; width: 112px;"
+       >
+            
 <nav class="nav flex-column">
     <a class="nav-card brand"
        style="background-image: url('../../images/logo.png')"
@@ -84,20 +88,23 @@
     
 </nav>
 
-    </aside>
-    <div class="layout">
-        <header class="layout-header" id="header">
-            <div>
+        </aside>
+
+        <div class="layout "
+     >
+            <header class="layout-header "
+         id="header" >
+                <div>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
                 <a href="/">
-                    <svg viewBox="0 0 30 29"
+                    <span class="icon"><svg viewBox="0 0 30 29"
      fill="currentColor"
      xmlns="http://www.w3.org/2000/svg">
     <path d="M15.386 2.14329L28.6415 12.0524C28.9653 12.2945 29.0356 12.7587 28.7985 13.0892C28.6561 13.2877 28.4354 13.3928 28.2116 13.3928C28.0626 13.3928 27.9123 13.3463 27.783 13.2495L14.9568 3.66124L2.13051 13.2496C1.8068 13.4915 1.3521 13.4198 1.11501 13.0892C0.877913 12.7587 0.948261 12.2945 1.27203 12.0524L14.5276 2.14329C14.7831 1.95224 15.1304 1.95224 15.386 2.14329ZM24.3817 14.1046C24.3817 13.7115 24.7064 13.3929 25.1067 13.3929C25.5071 13.3929 25.8317 13.7115 25.8318 14.1046V26.1454C25.8318 26.5385 25.5072 26.8571 25.1068 26.8571H17.857C17.4755 26.8571 17.1634 26.5676 17.1348 26.2002C17.1331 26.1838 17.132 26.1659 17.132 26.1454V19.2495C17.132 18.0721 16.1562 17.1141 14.9568 17.1141C13.7573 17.1141 12.7815 18.072 12.7815 19.2495V26.1454C12.7815 26.166 12.7804 26.1842 12.7787 26.2008C12.7498 26.568 12.4378 26.8571 12.0565 26.8571H4.80674C4.4064 26.8571 4.08175 26.5385 4.08175 26.1454V14.1046C4.08175 13.7116 4.4064 13.3929 4.80674 13.3929C5.20708 13.3929 5.53172 13.7116 5.53172 14.1046V25.4336H11.3316V19.2495C11.3316 17.2872 12.9579 15.6905 14.9568 15.6905C16.9556 15.6905 18.582 17.287 18.582 19.2495V25.4336H24.3817V14.1046Z"/>
 </svg>
-
+</span>
                     <span class="ml-2">Home</span>
                 </a>
             </li>
@@ -107,17 +114,20 @@
                 </a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
-                <span>Informacion General</span>
+                <span class="semibold">Informacion General</span>
             </li>
         </ol>
     </nav>
 </div>
 
-        </header>
-        <div class="layout layout-has-sider">
-            <aside class="layout-sider"
-                   style="flex: 0 0 224px; max-width: 224px; min-width: 224px; width: 224px;">
-                
+            </header>
+
+            <div class="layout layout-has-sider "
+     >
+                <aside class="layout-sider d-none d-xl-block"
+       style="flex: 0 0 224px; max-width: 224px; min-width: 224px; width: 224px;"
+       >
+                    
 <section>
     <div class="bg-default py-3 text-center mb-3">
         <h4 class="m-0">Dashboard</h4>
@@ -249,13 +259,16 @@
     </div>
 </section>
 
-            </aside>
+                </aside>
 
-            <main class="layout-content">
-                <section class="w-100 bg-white"
-                         style="min-height: 100%">
-                    <div class="container-fluid">
-                        
+                <section class="layout-content "
+         >
+
+                    <section class="w-100 bg-white"
+                             style="min-height: 100%">
+
+                        <div class="container-fluid">
+                            
 <div class="row align-items-center py-4">
     <div class="col">
         
@@ -379,7 +392,7 @@
 
     </div>
 
-    <div class="col col-md-auto">
+    <div class="col col-md-auto pl-0 pl-xl-4">
         
         <a href="/clima/Temperatura.html" class="btn btn-primary">
             <span class="d-inline-block mr-2">Siguiente Paso</span>
@@ -396,41 +409,41 @@
     </div>
 </div>
 
-                    </div>
-
-                    <nav>
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active"
-                               id="nav-home-tab"
-                               data-toggle="tab"
-                               href="#nav-home"
-                               role="tab"
-                               aria-controls="nav-home"
-                               aria-selected="true">
-                                <span class="semibold">Precipitacion Actual</span>
-                                <small class="text-muted">2018 - 2019</small>
-                            </a>
-                            <a class="nav-item nav-link"
-                               id="nav-profile-tab"
-                               data-toggle="tab"
-                               href="#nav-profile"
-                               role="tab"
-                               aria-controls="nav-profile"
-                               aria-selected="false">
-                                <span class="semibold">Precipitacion Futuro</span>
-                                <small class="text-muted">2020 - 2050</small>
-                            </a>
                         </div>
-                    </nav>
 
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active"
-                             id="nav-home"
-                             role="tabpanel"
-                             aria-labelledby="nav-home-tab">
-                            <div class="px-5 py-3">
-                                <div style="height: 136px">
-                                    
+                        
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active"
+                   id="nav-home-tab"
+                   data-toggle="tab"
+                   href="#nav-home"
+                   role="tab"
+                   aria-controls="nav-home"
+                   aria-selected="true">
+                    <span class="semibold">Precipitacion Actual</span>
+                    <small class="text-muted">2018 - 2019</small>
+                </a>
+                <a class="nav-item nav-link"
+                   id="nav-profile-tab"
+                   data-toggle="tab"
+                   href="#nav-profile"
+                   role="tab"
+                   aria-controls="nav-profile"
+                   aria-selected="false">
+                    <span class="semibold">Precipitacion Futuro</span>
+                    <small class="text-muted">2020 - 2050</small>
+                </a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active"
+                 id="nav-home"
+                 role="tabpanel"
+                 aria-labelledby="nav-home-tab">
+                <div class="px-5 py-3">
+                    <div style="height: 136px">
+                        
 <div class="card card-fancy card-fancy-blue h-100 pr-5">
     <div class="card-fancy-icon">
         
@@ -461,26 +474,25 @@
         <small class="card-text"></small>
         
             
-                                    <p class="mt-2" style="margin-right: 25%;">En meteorología, la precipitación es cualquier forma de hidrometeoro que cae de la atmósfera y llega a la superficie terrestre. Este fenómeno incluye lluvia, llovizna, nieve, aguanieve, granizo,</p>
-                                    
+                        <p class="mt-2" style="margin-right: 25%;">En meteorología, la precipitación es cualquier forma de hidrometeoro que cae de la atmósfera y llega a la superficie terrestre. Este fenómeno incluye lluvia, llovizna, nieve, aguanieve, granizo,</p>
+                        
         
     </div>
 </div>
 
-                                </div>
+                    </div>
 
-                                <div class="row mt-4">
-                                    <div class="col-sm-8">
-                                        <div class="shadow-lg">
-                                            <div class="alert alert-info">La informacion presentada es valida para el departamento de Matagalpa</div>
-                                            <img src="../../images/map2.jpg" class="w-100 img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        
-<div class="card mt-4 shadow-lg border-0">
+                    <div class="row mt-4">
+                        <div class="col-sm-8">
+                            <div class="shadow-lg">
+                                <img src="../../images/map2.jpg" class="w-100 img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            
+<div class="card shadow-lg border-0">
     <div class="card-body">
-        <h4 class="text-center mb-3">Leyenda de temperatura</h4>
+        <p class="text-center lead semibold">Leyenda de temperatura</p>
         <ul class="list-group list-group-flush list-group-dots">
             <li class="list-group-item border-top-0">
                 <span class="list-group-item-dot bg-success"></span>
@@ -502,26 +514,116 @@
     </div>
 </div>
 
-                                    </div>
-                                </div>
-
-                                <div class="mt-4">
-                                    <h4>Descripción del clima en tu area</h4>
-                                    <p>Rerum pretium magnam ea numquam integer sodales, condimentum, adipisci? Felis provident cubilia, mauris incidunt dignissimos quaerat venenatis eos. Earum veniam eiusmod dolorum sem. Debitis ipsum praesentium amet. Exercitation nonummy vitae, minus aperiam praesentium, commodi dolor eros. Eveniet eius proident ipsum. Potenti, ridiculus tortor? Nam aute hendrerit dolore ea harum sociis turpis neque aspernatur dapibus laborum tellus ad omnis consectetuer. Habitasse! In fringilla itaque dignissimos eleifend doloremque tristique iste. Eleifend penatibus! Parturient voluptates congue tempore doloremque, habitasse sapiente condimentum cubilia blanditiis, suscipit? Minim habitasse cillum ultricies? Lacus, laboriosam, laborum euismod, magnis! Dicta vel quo quos adipisicing placerat? Maiores ratione erat, sollicitudin.</p>
-                                </div>
-                            </div>
                         </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
                     </div>
-                </section>
-            </main>
-        </div>
+
+                    <div class="mt-4">
+                        <h5 class="title-highlight mb-4">Descripción del clima en tu area</h5>
+                        <p>Rerum pretium magnam ea numquam integer sodales, condimentum, adipisci? Felis provident cubilia, mauris incidunt dignissimos quaerat venenatis eos. Earum veniam eiusmod dolorum sem. Debitis ipsum praesentium amet. Exercitation nonummy vitae, minus aperiam praesentium, commodi dolor eros. Eveniet eius proident ipsum. Potenti, ridiculus tortor? Nam aute hendrerit dolore ea harum sociis turpis neque aspernatur dapibus laborum tellus ad omnis consectetuer. Habitasse! In fringilla itaque dignissimos eleifend doloremque tristique iste. Eleifend penatibus! Parturient voluptates congue tempore doloremque, habitasse sapiente condimentum cubilia blanditiis, suscipit? Minim habitasse cillum ultricies? Lacus, laboriosam, laborum euismod, magnis! Dicta vel quo quos adipisicing placerat? Maiores ratione erat, sollicitudin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade"
+                 id="nav-profile"
+                 role="tabpanel"
+                 aria-labelledby="nav-profile-tab">
+                <div class="px-5 py-3">
+                    <div style="height: 136px">
+                        
+<div class="card card-fancy card-fancy-blue h-100 pr-5">
+    <div class="card-fancy-icon">
+        
+        <svg viewBox="0 0 31 28" 
+     fill="currentColor" 
+     xmlns="http://www.w3.org/2000/svg">
+    <path d="M14.8025 25.0353C14.6256 24.953 14.41 25.0197 14.3212 25.182L13.0379 27.5227C12.9499 27.6857 13.0201 27.8836 13.197 27.9644C13.2503 27.9881 13.3052 28 13.3593 28C13.4894 28 13.6161 27.934 13.6799 27.8184L14.9616 25.477C15.0504 25.3155 14.9802 25.1168 14.8025 25.0353Z" />
+    <path d="M19.8028 25.0353C19.6244 24.953 19.4104 25.0197 19.32 25.182L18.0386 27.5227C17.9489 27.6857 18.0208 27.8836 18.2 27.9644C18.2509 27.9881 18.305 28 18.3599 28C18.4899 28 18.6167 27.934 18.6789 27.8184L19.9619 25.477C20.0507 25.3155 19.9789 25.1168 19.8028 25.0353Z" />
+    <path d="M24.8028 25.0353C24.6228 24.953 24.4088 25.0197 24.32 25.182L23.0386 27.5227C22.949 27.6857 23.0208 27.8836 23.1977 27.9644C23.2477 27.9881 23.3051 28 23.3583 28C23.49 28 23.6167 27.934 23.6789 27.8184L24.9619 25.477C25.0507 25.3155 24.9789 25.1168 24.8028 25.0353Z" />
+    <path fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M12.8754 14.2997V14.3806C10.7369 14.3916 9 16.0963 9 18.1895C9 20.2902 10.7481 22 12.8952 22H22.8475H26.3281H26.3316C28.9046 22 31 19.9532 31 17.4361C31 14.9199 28.9046 12.8731 26.3316 12.8731C26.0928 12.8731 25.8497 12.8925 25.6024 12.9321C24.9567 10.051 22.3743 8 19.3178 8C15.7656 8 12.8754 10.8263 12.8754 14.2997ZM26.0679 21.25L12.8953 21.2507V21.2509C11.1705 21.2509 9.76547 19.8773 9.76547 18.1895C9.76547 16.5033 11.1705 15.1289 12.8953 15.1289C13.0134 15.1289 13.1289 15.1365 13.2409 15.1492C13.3547 15.1593 13.4693 15.1222 13.5495 15.0438C13.6314 14.9663 13.6737 14.8559 13.6659 14.7447C13.6512 14.5981 13.64 14.4497 13.64 14.2998C13.64 11.2392 16.188 8.74913 19.3178 8.74913C22.1287 8.74913 24.4836 10.7184 24.9189 13.4335C24.937 13.5363 24.9956 13.6299 25.0869 13.6863C25.1757 13.7453 25.2869 13.7629 25.3904 13.7385C25.711 13.6619 26.0265 13.6222 26.3316 13.6222C28.4822 13.6222 30.2329 15.3337 30.2329 17.4361C30.2329 19.5394 28.4822 21.2509 26.3316 21.2509V21.2584C26.2454 21.25 26.1549 21.25 26.0679 21.25Z" />
+    <path d="M5 10.9441C5 7.66702 7.70456 5 11.0278 5C13.06 5 14.8185 5.85838 15.9383 7.53209C16.0516 7.70178 16.0046 7.93024 15.8325 8.04116C15.6604 8.15374 15.4304 8.10821 15.3154 7.93769C14.3342 6.47092 12.8081 5.73587 11.0278 5.73587C8.11587 5.73587 5.74707 8.07179 5.74707 10.9441C5.74707 12.7204 6.65195 14.3577 8.16707 15.3229C8.34083 15.433 8.39203 15.6598 8.27871 15.8311C8.20737 15.9404 8.08985 16 7.96646 16C7.89679 16 7.82544 15.9809 7.765 15.9412C6.03331 14.8403 5 12.9729 5 10.9441" />
+    <path d="M10.5004 3C10.2946 3 10.125 2.8648 10.125 2.69919V0.299459C10.125 0.133844 10.2946 0 10.5004 0C10.708 0 10.875 0.133844 10.875 0.299459V2.69919C10.875 2.8648 10.708 3 10.5004 3Z" />
+    <path d="M6.84736 3.94852C6.79438 3.98384 6.73637 4 6.67906 4C6.57097 4 6.46434 3.94318 6.4034 3.83875L5.04831 1.52064C4.95473 1.36093 5.00112 1.15054 5.15277 1.05149C5.30438 0.95167 5.50242 1.00161 5.59673 1.16129L6.95255 3.4794C7.04468 3.63988 6.99897 3.85027 6.84736 3.94855" />
+    <path d="M3.66731 6.99997C3.61509 6.99997 3.56063 6.98668 3.5114 6.95868L1.17499 5.65199C1.01311 5.56077 0.952685 5.35105 1.03997 5.18264C1.12575 5.01424 1.32642 4.95109 1.4883 5.04075L3.82322 6.34821C3.98584 6.43865 4.04701 6.64838 3.96122 6.81756C3.90005 6.93373 3.78443 7 3.66731 7" />
+    <path d="M0.299959 10.125H0.30104L2.70004 10.1333C2.86623 10.134 3 10.3002 3 10.5054C2.99892 10.7098 2.86488 10.875 2.70004 10.875H2.69896L0.299959 10.8659C0.133766 10.8652 0 10.6982 0 10.4938C0.00108094 10.2894 0.135117 10.125 0.299959 10.125" />
+    <path d="M1.17363 16.3567L3.50678 15.0422C3.66772 14.9512 3.87132 15.0122 3.95964 15.178C4.04722 15.3446 3.98731 15.5529 3.8279 15.6439L1.4925 16.9575C1.44232 16.9869 1.38696 17 1.33306 17C1.21704 17 1.10027 16.936 1.03964 16.8218C0.953559 16.6552 1.01191 16.4469 1.17363 16.3567" />
+    <path d="M20.8271 5.64393L18.4921 6.95835C18.4404 6.98692 18.3865 7 18.3326 7C18.2151 7 18.1013 6.9352 18.0406 6.82181C17.953 6.65597 18.0114 6.44693 18.1739 6.3559L20.5067 5.04226C20.6676 4.95124 20.8712 5.01214 20.9588 5.17802C21.0472 5.34386 20.9888 5.55213 20.8271 5.64393Z" />
+    <path d="M6.40795 18.1611C6.50244 18.0005 6.69862 17.952 6.84937 18.052C6.99868 18.1519 7.04556 18.3625 6.95107 18.524L5.59219 20.8393C5.53232 20.9423 5.42629 21 5.32026 21C5.264 21 5.20414 20.9823 5.15221 20.9477C5.00146 20.8478 4.95458 20.6364 5.04834 20.4773L6.40795 18.1611Z" />
+    <path d="M15.5908 3.84004C15.5317 3.94309 15.4264 4 15.3196 4C15.2612 4 15.2035 3.98382 15.1509 3.94924C15.0009 3.84773 14.9554 3.63702 15.0477 3.47707L16.4086 1.16078C16.5017 1.00083 16.6979 0.951611 16.85 1.05235C16.9993 1.15156 17.0448 1.36304 16.9517 1.52299L15.5908 3.84004Z" />
+</svg>
+
+        
+    </div>
+    <div class="card-body">
+        <h5 class="card-title m-0">¿Que es la Precipitacion?</h5>
+        <small class="card-text"></small>
+        
+            
+                        <p class="mt-2" style="margin-right: 25%;">En meteorología, la precipitación es cualquier forma de hidrometeoro que cae de la atmósfera y llega a la superficie terrestre. Este fenómeno incluye lluvia, llovizna, nieve, aguanieve, granizo,</p>
+                        
+        
     </div>
 </div>
 
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-sm-8">
+                            <div class="shadow-lg">
+                                <img src="../../images/map2.jpg" class="w-100 img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            
+<div class="card shadow-lg border-0">
+    <div class="card-body">
+        <p class="text-center lead semibold">Leyenda de temperatura</p>
+        <ul class="list-group list-group-flush list-group-dots">
+            <li class="list-group-item border-top-0">
+                <span class="list-group-item-dot bg-success"></span>
+                <span>Muy Caliente</span>
+            </li>
+            <li class="list-group-item border-top-0">
+                <span class="list-group-item-dot bg-success"></span>
+                <span>Muy Caliente</span>
+            </li>
+            <li class="list-group-item border-top-0">
+                <span class="list-group-item-dot bg-success"></span>
+                <span>Muy Caliente</span>
+            </li>
+            <li class="list-group-item border-top-0">
+                <span class="list-group-item-dot bg-success"></span>
+                <span>Muy Caliente</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h5 class="title-highlight mb-4">Descripción del clima en tu area</h5>
+                        <p>Rerum pretium magnam ea numquam integer sodales, condimentum, adipisci? Felis provident cubilia, mauris incidunt dignissimos quaerat venenatis eos. Earum veniam eiusmod dolorum sem. Debitis ipsum praesentium amet. Exercitation nonummy vitae, minus aperiam praesentium, commodi dolor eros. Eveniet eius proident ipsum. Potenti, ridiculus tortor? Nam aute hendrerit dolore ea harum sociis turpis neque aspernatur dapibus laborum tellus ad omnis consectetuer. Habitasse! In fringilla itaque dignissimos eleifend doloremque tristique iste. Eleifend penatibus! Parturient voluptates congue tempore doloremque, habitasse sapiente condimentum cubilia blanditiis, suscipit? Minim habitasse cillum ultricies? Lacus, laboriosam, laborum euismod, magnis! Dicta vel quo quos adipisicing placerat? Maiores ratione erat, sollicitudin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+                    </section>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/popper.js/dist/umd/popper.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
 
     <!-- build:js js/app.js -->

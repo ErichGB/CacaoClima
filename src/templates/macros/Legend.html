@@ -1,7 +1,7 @@
 {% macro Legend(title, list, classes = []) %}
 <div class="card {{ classes | join(' ') }}">
     <div class="card-body">
-        <h4 class="text-center mb-3">{{title}}</h4>
+        <p class="text-center lead semibold">{{title}}</p>
         <ul class="list-group list-group-flush list-group-dots">
             <li class="list-group-item border-top-0">
                 <span class="list-group-item-dot bg-success"></span>

@@ -1,36 +1,87 @@
 {% extends 'base.html' %}
 
-{% from 'macros/_viewport.html' import Viewport %}
 {% from 'macros/Ask.html' import Ask %}
+{% from 'macros/_viewport.html' import Viewport %}
+{% from 'macros/Layout.html' import Layout, Header, Content, Footer %}
+
+{% set optList = ['Facilis scelerisque lacinia vehicula', 'Facilis scelerisque lacinia vehicula', 'Facilis scelerisque lacinia vehicula', 'Facilis scelerisque lacinia vehicula', 'Facilis scelerisque lacinia vehicula', 'Facilis scelerisque lacinia vehicula'] %}
+{% set optList2 = ['1. Recomendacion', '2. Recomendacion', '3. Recomendacion', '4. Recomendacion', '5. Recomendacion']  %}
 
 {% block content %}
     {% call Viewport(data, 'plan', 'compare', 1) %}
-        <div class="container-fluid mt-4">
-            <h4 class="text-center">SELECCIONE LA RESPUESTA A SU DERECHA DE LAS PRACTICAS QUE USTED REALIZA</h4>
-            <div class="row mt-5 mb-3">
-                <div class="col">
-                    <p class="semibold text-center lead">Recomendaciones Dadas</p>
+        {% call Layout(false, ['mt-3', 'px-4']) %}
+
+            {% call Header(['py-5']) %}
+                <h4 class="text-center">SELECCIONE LA RESPUESTA A SU DERECHA DE LAS PRACTICAS QUE USTED REALIZA</h4>
+            {% endcall %}
+
+            {% call Content() %}
+                <div style="min-height: calc(100vh - 420px)">
+                    <div class="row py-3">
+                        <div class="col">
+                            <p class="semibold text-center lead m-0">Recomendaciones Dadas</p>
+                        </div>
+                        <div class="col">
+                            <p class="semibold text-center lead m-0">Actividades que realiza  en su finca</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-6 py-3 border-right">
+                            <div class="px-xl-5 py-xl-4">
+                                {{ Ask(1, 'list', '¿Que practicas hace actualmente en su finca de cacao?', optList) }}
+                            </div>
+                        </div>
+                        <div class="col col-sm-6 py-3">
+                            <div class="px-xl-5 py-xl-4">
+                                {{ Ask(1, 'radio', '¿Que practicas hace actualmente en su finca de cacao?', optList2) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-6 py-3 border-right">
+                            <div class="px-xl-5 py-xl-4">
+                                {{ Ask(1, 'list', '¿Illum curae eligendi hic, omnis vel proin, saepe expedita tenetur consequatur ?', optList) }}
+                            </div>
+                        </div>
+                        <div class="col col-sm-6 py-3">
+                            <div class="px-xl-5 py-xl-4">
+                                {{ Ask(1, 'unit', '¿Non error facilisi mattis volutpat facilis auctor sapiente?', ['uno']) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-6 py-3 border-right">
+                            <div class="px-xl-5 py-xl-4">
+                                {{ Ask(1, 'list', '¿Que practicas hace actualmente en su finca de cacao?', optList) }}
+                            </div>
+                        </div>
+                        <div class="col col-sm-6 py-3">
+                            <div class="px-xl-5 py-xl-4">
+                                {{ Ask(1, 'radio', '¿Que practicas hace actualmente en su finca de cacao?', optList2) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-6 py-3 border-right">
+                            <div class="px-xl-5 py-xl-4">
+                                {{ Ask(1, 'list', '¿Que practicas hace actualmente en su finca de cacao?', optList) }}
+                            </div>
+                        </div>
+                        <div class="col col-sm-6 py-3">
+                            <div class="px-xl-5 py-xl-4">
+                                {{ Ask(1, 'radio', '¿Que practicas hace actualmente en su finca de cacao?', optList2) }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <p class="semibold text-center lead">Actividades que realiza  en su finca</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col border-right px-5 py-4">
-                    {{ Ask(1, 'list', 'questions title', ['uno', 'dos', 'tres']) }}
-                </div>
-                <div class="col px-5 py-4">
-                    {{ Ask(1, 'radio', 'questions title', ['uno', 'dos', 'tres']) }}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col border-right px-5 py-4">
-                    {{ Ask(1, 'list', 'questions title', ['uno', 'dos', 'tres']) }}
-                </div>
-                <div class="col px-5 py-4">
-                    {{ Ask(1, 'unit', '¿Non error facilisi mattis volutpat facilis auctor sapiente?', ['uno']) }}
-                </div>
-            </div>
-        </div>
+            {% endcall %}
+
+            {% call Footer() %}
+                <nav class="d-flex justify-content-center py-4">
+                    {% include "partials/pagination.html" %}
+                </nav>
+            {% endcall %}
+
+        {% endcall %}
     {% endcall %}
 {% endblock %}

@@ -4,19 +4,38 @@
 {% from 'macros/_viewport.html' import Viewport %}
 {% from 'macros/Layout.html' import Layout, Header, Sider, Content, Footer %}
 
+{% set optList = ['Facilis scelerisque lacinia vehicula', 'Facilis scelerisque lacinia vehicula', 'Facilis scelerisque lacinia vehicula', 'Facilis scelerisque lacinia vehicula', 'Facilis scelerisque lacinia vehicula', 'Facilis scelerisque lacinia vehicula'] %}
+
 {% block content %}
     {% call Viewport(data, 'clima', 'practice', 6) %}
-        {% call Layout(false, ['p-3']) %}
+        {% call Layout(false, ['px-4', 'mt-3']) %}
             {% call Header() %}
                 {% include "partials/intro.html" %}
             {% endcall %}
 
             {% call Content() %}
-                {{ Ask(1,'title lol') }}
+                <div class="container-fluid px-0 py-5" style="min-height: calc(100vh - 550px)">
+                    <div class="row">
+                        <div class="col col-sm-6">
+                            {{ Ask(1, 'list', '¿Que practicas hace actualmente en su finca de cacao?', optList) }}
+                        </div>
+                        <div class="col col-sm-6">
+                            {{ Ask(1, 'list', '¿Que practicas hace actualmente en su finca de cacao?', optList) }}
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col col-sm-6">
+                            {{ Ask(1, 'list', '¿Que practicas hace actualmente en su finca de cacao?', optList) }}
+                        </div>
+                        <div class="col col-sm-6">
+                            {{ Ask(1, 'list', '¿Que practicas hace actualmente en su finca de cacao?', optList) }}
+                        </div>
+                    </div>
+                </div>
             {% endcall %}
 
-            {% call Content() %}
-                <nav class="d-flex justify-content-center">
+            {% call Footer() %}
+                <nav class="d-flex justify-content-center  py-4">
                     {% include "partials/pagination.html" %}
                 </nav>
             {% endcall %}

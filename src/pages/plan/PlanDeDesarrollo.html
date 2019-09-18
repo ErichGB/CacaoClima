@@ -1,22 +1,22 @@
 {% extends "base.html" %}
 
 {% from 'macros/_viewport.html' import Viewport %}
+{% from 'macros/Layout.html' import Layout, Header, Content, Footer %}
 
 {% set months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'] %}
 
 {% block content %}
     {% call Viewport(data, 'plan', 'development', 3) %}
-        <div class="layout">
-            <div class="layout-header">
-                <div class="p-4 text-center">
-                    <h4>Seleccione las fechas para llevar a cabo las recomendaciones</h4>
-                </div>
-            </div>
-            <div class="layout-content">
-                <div class="p-4">
+        {% call Layout(false, ['mt-3', 'px-4']) %}
+            {% call Header(['py-5']) %}
+                <h4 class="text-center text-uppercase">Seleccione las fechas para llevar a cabo las recomendaciones</h4>
+            {% endcall %}
+
+            {% call Content() %}
+                <div style="min-height: calc(100vh - 400px)">
                     {% for i in range(1, 15) -%}
                     <div class="row align-items-center mt-3">
-                        <div class="col col-sm-8">
+                        <div class="col col-7 col-xl-8">
                             <div class="media media-numeric">
                                 <div class="media-left">{{i}}</div>
                                 <div class="media-body text-truncate">
@@ -25,7 +25,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-sm-4">
+                        <div class="col col-5 col-xl-4 pl-0 pr-2 pr-xl-3">
                             <form class="form-inline justify-content-end ">
                                 <label class="mr-3 lead semibold" for="selectStart{{i}}">De:</label>
                                 <select class="custom-select form-select" id="selectStart{{i}}">
@@ -45,15 +45,14 @@
                     </div>
                     {%- endfor %}
                 </div>
-            </div>
-            <div class="layout-footer">
-                <div class="px-4 pb-5 text-right">
-                    <a href="/plan/GenerarPresupuesto.html" class="btn btn-primary">
-                        <span class="d-inline-block mr-2">Generar Presupuesto</span>
-                        <span class="d-inline-block" style="width: 1.5rem">{% include "../templates/svg/arrow.svg" %}</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+            {% endcall %}
+
+            {% call Footer(['py-5', 'text-right']) %}
+                <a href="/plan/GenerarPresupuesto.html" class="btn btn-primary">
+                    <span class="d-inline-block mr-2">Generar Presupuesto</span>
+                    <span class="d-inline-block" style="width: 1.5rem">{% include "../templates/svg/arrow.svg" %}</span>
+                </a>
+            {% endcall %}
+        {% endcall %}
     {% endcall %}
 {% endblock %}

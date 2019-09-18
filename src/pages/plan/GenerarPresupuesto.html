@@ -1,23 +1,28 @@
 {% extends "base.html" %}
 
 {% from 'macros/_viewport.html' import Viewport %}
+{% from 'macros/Layout.html' import Layout, Header, Content, Footer %}
 
 {% block content %}
     {% call Viewport(data, 'plan', 'budget', 4) %}
-        <div class="container-fluid">
-            <h4 class="text-center">Presupuesto generado apartir de las actividades  selecccionadas a realizar por mes</h4>
-            <div class="d-flex justify-content-between py-4">
-                <div class="d-flex flex-column">
-                    <small>Total</small>
-                    <span class="semibold lead">C$ 28,654.54</span>
+        {% call Layout(false, ['mt-3', 'px-4']) %}
+            {% call Header(['py-5']) %}
+                <h4 class="text-center text-uppercase">Presupuesto generado apartir de las actividades  selecccionadas a realizar por mes</h4>
+            {% endcall %}
+
+            {% call Content() %}
+                <div class="d-flex justify-content-between py-4">
+                    <div class="d-flex flex-column">
+                        <small>Total</small>
+                        <span class="semibold lead">C$ 28,654.54</span>
+                    </div>
+                    <button class="btn btn-danger">
+                        <span class="mr-2">Descargar</span>
+                        <span class="d-inline-block" style="width: 1.5rem">{% include "svg/pdf.svg" %}</span>
+                    </button>
                 </div>
-                <button class="btn btn-danger">
-                    <span class="mr-2">Descargar</span>
-                    <span class="d-inline-block" style="width: 1.5rem">{% include "svg/pdf.svg" %}</span>
-                </button>
-            </div>
-            <table class="table">
-                <thead>
+                <table class="table">
+                    <thead>
                     <tr class="thead-light">
                         <th scope="col">Actividad</th>
                         <th scope="col">Mes inicial</th>
@@ -25,8 +30,8 @@
                         <th scope="col">Costo</th>
                         <th scope="col">Detalles</th>
                     </tr>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td>Realizar asocios de cultivos de cacao con otras especies</th>
                         <td>02/03/2019</td>
@@ -76,8 +81,9 @@
                         <td>C$ 16,499.50</td>
                         <td><a href="/">Ver Detalles</a></td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
+                    </tbody>
+                </table>
+            {% endcall %}
+        {% endcall %}
     {% endcall %}
 {% endblock %}

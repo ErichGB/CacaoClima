@@ -24,10 +24,14 @@
 </head>
 <body>
     
-<div id="viewport" class="layout layout-has-sider">
-    <aside class="layout-sider bg-white"
-           style="flex: 0 0 112px; max-width: 112px; min-width: 112px; width: 112px;">
-        
+    
+    <div class="layout layout-has-sider "
+      id="viewport" >
+
+        <aside class="layout-sider bg-white border-right"
+       style="flex: 0 0 112px; max-width: 112px; min-width: 112px; width: 112px;"
+       >
+            
 <nav class="nav flex-column">
     <a class="nav-card brand"
        style="background-image: url('../../images/logo.png')"
@@ -84,20 +88,23 @@
     
 </nav>
 
-    </aside>
-    <div class="layout">
-        <header class="layout-header" id="header">
-            <div>
+        </aside>
+
+        <div class="layout "
+     >
+            <header class="layout-header "
+         id="header" >
+                <div>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
                 <a href="/">
-                    <svg viewBox="0 0 30 29"
+                    <span class="icon"><svg viewBox="0 0 30 29"
      fill="currentColor"
      xmlns="http://www.w3.org/2000/svg">
     <path d="M15.386 2.14329L28.6415 12.0524C28.9653 12.2945 29.0356 12.7587 28.7985 13.0892C28.6561 13.2877 28.4354 13.3928 28.2116 13.3928C28.0626 13.3928 27.9123 13.3463 27.783 13.2495L14.9568 3.66124L2.13051 13.2496C1.8068 13.4915 1.3521 13.4198 1.11501 13.0892C0.877913 12.7587 0.948261 12.2945 1.27203 12.0524L14.5276 2.14329C14.7831 1.95224 15.1304 1.95224 15.386 2.14329ZM24.3817 14.1046C24.3817 13.7115 24.7064 13.3929 25.1067 13.3929C25.5071 13.3929 25.8317 13.7115 25.8318 14.1046V26.1454C25.8318 26.5385 25.5072 26.8571 25.1068 26.8571H17.857C17.4755 26.8571 17.1634 26.5676 17.1348 26.2002C17.1331 26.1838 17.132 26.1659 17.132 26.1454V19.2495C17.132 18.0721 16.1562 17.1141 14.9568 17.1141C13.7573 17.1141 12.7815 18.072 12.7815 19.2495V26.1454C12.7815 26.166 12.7804 26.1842 12.7787 26.2008C12.7498 26.568 12.4378 26.8571 12.0565 26.8571H4.80674C4.4064 26.8571 4.08175 26.5385 4.08175 26.1454V14.1046C4.08175 13.7116 4.4064 13.3929 4.80674 13.3929C5.20708 13.3929 5.53172 13.7116 5.53172 14.1046V25.4336H11.3316V19.2495C11.3316 17.2872 12.9579 15.6905 14.9568 15.6905C16.9556 15.6905 18.582 17.287 18.582 19.2495V25.4336H24.3817V14.1046Z"/>
 </svg>
-
+</span>
                     <span class="ml-2">Home</span>
                 </a>
             </li>
@@ -107,17 +114,20 @@
                 </a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
-                <span>Informacion General</span>
+                <span class="semibold">Informacion General</span>
             </li>
         </ol>
     </nav>
 </div>
 
-        </header>
-        <div class="layout layout-has-sider">
-            <aside class="layout-sider"
-                   style="flex: 0 0 224px; max-width: 224px; min-width: 224px; width: 224px;">
-                
+            </header>
+
+            <div class="layout layout-has-sider "
+     >
+                <aside class="layout-sider d-none d-xl-block"
+       style="flex: 0 0 224px; max-width: 224px; min-width: 224px; width: 224px;"
+       >
+                    
 <section>
     <div class="bg-default py-3 text-center mb-3">
         <h4 class="m-0">Dashboard</h4>
@@ -215,13 +225,16 @@
     </div>
 </section>
 
-            </aside>
+                </aside>
 
-            <main class="layout-content">
-                <section class="w-100 bg-white"
-                         style="min-height: 100%">
-                    <div class="container-fluid">
-                        
+                <section class="layout-content "
+         >
+
+                    <section class="w-100 bg-white"
+                             style="min-height: 100%">
+
+                        <div class="container-fluid">
+                            
 <div class="row align-items-center py-4">
     <div class="col">
         
@@ -307,7 +320,7 @@
 
     </div>
 
-    <div class="col col-md-auto">
+    <div class="col col-md-auto pl-0 pl-xl-4">
         
         <a href="/" class="btn btn-primary">
             <span class="d-inline-block mr-2">Salir</span>
@@ -324,16 +337,26 @@
     </div>
 </div>
 
-                        <h4 class="text-center">Presupuesto generado apartir de las actividades  selecccionadas a realizar por mes</h4>
-                        <div class="d-flex justify-content-between py-4">
-                            <div class="d-flex flex-column">
-                                <small>Total</small>
-                                <span class="semibold lead">C$ 28,654.54</span>
-                            </div>
-                            <button class="btn btn-danger">
-                                <span class="mr-2">Descargar</span>
-                                <span class="d-inline-block" style="width: 1.5rem">
-                                    <svg viewBox="0 0 22 30" 
+                        </div>
+
+                        
+        <div class="layout mt-3 px-4"
+     >
+            <header class="layout-header py-5"
+        >
+                <h4 class="text-center text-uppercase">Presupuesto generado apartir de las actividades  selecccionadas a realizar por mes</h4>
+            </header>
+
+            <section class="layout-content "
+         >
+                <div class="d-flex justify-content-between py-4">
+                    <div class="d-flex flex-column">
+                        <small>Total</small>
+                        <span class="semibold lead">C$ 28,654.54</span>
+                    </div>
+                    <button class="btn btn-danger">
+                        <span class="mr-2">Descargar</span>
+                        <span class="d-inline-block" style="width: 1.5rem"><svg viewBox="0 0 22 30" 
      fill="currentColor" 
      xmlns="http://www.w3.org/2000/svg">
     <path d="M10.5611 22.587C10.2009 22.587 9.96831 22.6189 9.83057 22.6505V27.3193C9.96858 27.3512 10.1909 27.3512 10.3918 27.3512C11.8524 27.3615 12.8054 26.5573 12.8054 24.8527C12.8158 23.3703 11.9479 22.587 10.5611 22.587Z"/>
@@ -341,82 +364,87 @@
     <path d="M21.8766 7.18909C21.8749 7.05151 21.8313 6.91562 21.7368 6.80821L15.9523 0.201198C15.9511 0.199346 15.9489 0.198747 15.9477 0.197058C15.9132 0.158551 15.8736 0.126797 15.8311 0.0988016C15.8185 0.0906316 15.8052 0.0832787 15.792 0.0758168C15.7552 0.0558822 15.7167 0.0393245 15.676 0.0272331C15.6656 0.024074 15.6553 0.0196078 15.6444 0.0167756C15.6008 0.00620914 15.5554 0 15.51 0H1.29414C0.645562 0 0.117676 0.52794 0.117676 1.17652V28.8235C0.117676 29.4724 0.645562 30.0001 1.29414 30.0001H20.7059C21.3545 30.0001 21.8824 29.4724 21.8824 28.8235V7.255C21.8823 7.23288 21.8789 7.21121 21.8766 7.18909ZM6.52622 25.2654C5.97589 25.784 5.16064 26.0173 4.20765 26.0173C3.99621 26.0173 3.80509 26.0064 3.65743 25.9857V28.5369H2.05885V21.4964C2.55618 21.412 3.25531 21.3482 4.24005 21.3482C5.23499 21.3482 5.94441 21.5389 6.42066 21.9198C6.87616 22.2799 7.18237 22.8728 7.18237 23.5713C7.18237 24.2704 6.95002 24.8632 6.52622 25.2654ZM13.334 27.6901C12.5832 28.3145 11.4398 28.6109 10.0427 28.6109C9.20617 28.6109 8.61363 28.5581 8.21064 28.5053V21.4964C8.80361 21.4016 9.57681 21.3482 10.3918 21.3482C11.7462 21.3482 12.6251 21.5918 13.3136 22.1105C14.0549 22.6611 14.5208 23.5397 14.5208 24.7995C14.5202 26.1655 14.0227 27.1076 13.334 27.6901ZM19.9418 22.7246H17.1994V24.3549H19.7614V25.6681H17.1994V28.5369H15.5801V21.4016H19.9418V22.7246ZM1.29414 19.9756V1.17652H14.9217V7.19585C14.9217 7.52052 15.1849 7.78408 15.51 7.78408H20.7059L20.7065 19.9756H1.29414Z"/>
     <path d="M17.0353 12.6435C17.0008 12.6403 16.1719 12.5646 14.8995 12.5646C14.5008 12.5646 14.0993 12.5724 13.7029 12.5873C11.1902 10.7017 9.13218 8.81462 8.03038 7.75705C8.05048 7.6406 8.06432 7.54855 8.07074 7.47786C8.21606 5.94382 8.05451 4.9082 7.5922 4.3997C7.28948 4.06741 6.84487 3.95684 6.38126 4.08347C6.09335 4.15891 5.5604 4.43821 5.38976 5.00678C5.20136 5.6351 5.50419 6.39768 6.29978 7.282C6.31241 7.29539 6.5824 7.57829 7.07298 8.05765C6.75413 9.57796 5.91949 12.8587 5.51454 14.4342C4.5634 14.9424 3.77091 15.5546 3.15741 16.2569L3.11721 16.3028L3.09123 16.358C3.02805 16.4907 2.72604 17.1797 2.95278 17.7332C3.05632 17.9849 3.25033 18.1687 3.51389 18.2652L3.58453 18.2842C3.58453 18.2842 3.64826 18.298 3.76029 18.298C4.25103 18.298 5.46236 18.0401 6.11209 15.6458L6.26949 15.0391C8.53741 13.9368 11.3723 13.5812 13.4272 13.4821C14.4841 14.2659 15.5359 14.986 16.555 15.6236L16.5883 15.6429C16.6377 15.6681 17.0846 15.8888 17.608 15.8893C18.3559 15.8893 18.9022 15.4303 19.1056 14.6304L19.1159 14.5757C19.1727 14.1186 19.0579 13.7065 18.7838 13.3844C18.2066 12.7059 17.1318 12.6467 17.0353 12.6435ZM3.77859 17.4152C3.77402 17.4098 3.77184 17.4046 3.76955 17.3989C3.72075 17.2814 3.7793 16.9964 3.86547 16.7876C4.2354 16.374 4.67946 15.9943 5.19188 15.6525C4.69286 17.2679 3.96716 17.4075 3.77859 17.4152ZM6.947 6.68271C6.18066 5.82966 6.19215 5.40673 6.23338 5.26435C6.30103 5.02639 6.60637 4.93647 6.60898 4.93565C6.76279 4.89382 6.85615 4.90204 6.93926 4.99328C7.12723 5.19976 7.28866 5.8229 7.22488 6.96593C7.04395 6.78412 6.947 6.68271 6.947 6.68271ZM6.55103 13.947L6.56426 13.8965L6.56252 13.8971C6.94624 12.3942 7.49961 10.1936 7.8178 8.78003L7.82929 8.79098L7.83044 8.78423C8.85985 9.75361 10.4383 11.1715 12.3282 12.6463L12.307 12.6471L12.3382 12.6707C10.5578 12.8211 8.43136 13.1721 6.55103 13.947ZM18.2434 14.44C18.1078 14.9382 17.847 15.0063 17.608 15.0063C17.3306 15.0063 17.0635 14.8908 17.0026 14.8629C16.3086 14.428 15.5987 13.954 14.8823 13.4469C14.888 13.4469 14.8932 13.4469 14.8995 13.4469C16.1276 13.4469 16.9457 13.5215 16.9778 13.5238C17.1829 13.5314 17.8321 13.6272 18.1118 13.9561C18.2215 14.085 18.2635 14.2391 18.2434 14.44Z"/>
 </svg>
+</span>
+                    </button>
+                </div>
+                <table class="table">
+                    <thead>
+                    <tr class="thead-light">
+                        <th scope="col">Actividad</th>
+                        <th scope="col">Mes inicial</th>
+                        <th scope="col">Mes Final</th>
+                        <th scope="col">Costo</th>
+                        <th scope="col">Detalles</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Realizar asocios de cultivos de cacao con otras especies</th>
+                        <td>02/03/2019</td>
+                        <td>02/05/2019</td>
+                        <td>C$ 16,499.50</td>
+                        <td><a href="/">Ver Detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>Elaborar viviero con plantas de cacao mejoras geneticamente</th>
+                        <td>02/03/2019</td>
+                        <td>02/05/2019</td>
+                        <td>C$ 16,499.50</td>
+                        <td><a href="/">Ver Detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>Realizar asocios de cultivos de cacao con otras especies</th>
+                        <td>02/03/2019</td>
+                        <td>02/05/2019</td>
+                        <td>C$ 16,499.50</td>
+                        <td><a href="/">Ver Detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>Elaborar viviero con plantas de cacao mejoras geneticamente</th>
+                        <td>02/03/2019</td>
+                        <td>02/05/2019</td>
+                        <td>C$ 16,499.50</td>
+                        <td><a href="/">Ver Detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>Realizar asocios de cultivos de cacao con otras especies</th>
+                        <td>02/03/2019</td>
+                        <td>02/05/2019</td>
+                        <td>C$ 16,499.50</td>
+                        <td><a href="/">Ver Detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>Elaborar viviero con plantas de cacao mejoras geneticamente</th>
+                        <td>02/03/2019</td>
+                        <td>02/05/2019</td>
+                        <td>C$ 16,499.50</td>
+                        <td><a href="/">Ver Detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>Realizar asocios de cultivos de cacao con otras especies</th>
+                        <td>02/03/2019</td>
+                        <td>02/05/2019</td>
+                        <td>C$ 16,499.50</td>
+                        <td><a href="/">Ver Detalles</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    
+                    </section>
 
-                                </span>
-                            </button>
-                        </div>
-                        <table class="table">
-                            <thead>
-                                <tr class="thead-light">
-                                    <th scope="col">Actividad</th>
-                                    <th scope="col">Mes inicial</th>
-                                    <th scope="col">Mes Final</th>
-                                    <th scope="col">Costo</th>
-                                    <th scope="col">Detalles</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Realizar asocios de cultivos de cacao con otras especies</th>
-                                    <td>02/03/2019</td>
-                                    <td>02/05/2019</td>
-                                    <td>C$ 16,499.50</td>
-                                    <td><a href="/">Ver Detalles</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Elaborar viviero con plantas de cacao mejoras geneticamente</th>
-                                    <td>02/03/2019</td>
-                                    <td>02/05/2019</td>
-                                    <td>C$ 16,499.50</td>
-                                    <td><a href="/">Ver Detalles</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Realizar asocios de cultivos de cacao con otras especies</th>
-                                    <td>02/03/2019</td>
-                                    <td>02/05/2019</td>
-                                    <td>C$ 16,499.50</td>
-                                    <td><a href="/">Ver Detalles</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Elaborar viviero con plantas de cacao mejoras geneticamente</th>
-                                    <td>02/03/2019</td>
-                                    <td>02/05/2019</td>
-                                    <td>C$ 16,499.50</td>
-                                    <td><a href="/">Ver Detalles</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Realizar asocios de cultivos de cacao con otras especies</th>
-                                    <td>02/03/2019</td>
-                                    <td>02/05/2019</td>
-                                    <td>C$ 16,499.50</td>
-                                    <td><a href="/">Ver Detalles</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Elaborar viviero con plantas de cacao mejoras geneticamente</th>
-                                    <td>02/03/2019</td>
-                                    <td>02/05/2019</td>
-                                    <td>C$ 16,499.50</td>
-                                    <td><a href="/">Ver Detalles</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Realizar asocios de cultivos de cacao con otras especies</th>
-                                    <td>02/03/2019</td>
-                                    <td>02/05/2019</td>
-                                    <td>C$ 16,499.50</td>
-                                    <td><a href="/">Ver Detalles</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                 </section>
-            </main>
+            </div>
         </div>
     </div>
-</div>
+
 
 
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/popper.js/dist/umd/popper.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
 
     <!-- build:js js/app.js -->

@@ -9,4 +9,33 @@
     font-weight: bold;
     margin-right: 1rem;
   }
+
+  .media-body{
+    padding-top: .25rem;
+  }
+
+  ol {
+    padding: 0 0 0 1.25rem;
+    margin: 0;
+
+    li{
+      margin-top: 1rem;
+    }
+  }
+
+  .btn-group-toggle{
+    max-width: 100%;
+    display: inline-block;
+    margin: -.5rem;
+
+    .btn{
+      margin: .5rem !important;
+
+      &.active{
+        background-color: $primary;
+        color: $white;
+        border-color: $primary;
+      }
+    }
+  }
 }
