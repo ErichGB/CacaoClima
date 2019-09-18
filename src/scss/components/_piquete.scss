@@ -1,0 +1,16 @@
+.piquete{
+  position: relative;
+
+  &:after{
+    content: " ";
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 10rem;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    background-image: url("../../images/piquete.png");
+  }
+}
