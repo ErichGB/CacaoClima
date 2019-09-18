@@ -1,0 +1,25 @@
+{%- macro Layout(hasSider, classes = [], id = undefined) -%}
+<div class="layout{% if hasSider %} layout-has-sider{% endif %} {{ classes | join(' ') }}"
+     {% if id %} id="{{id}}" {% endif %}>{{ caller() }}</div>
+{%- endmacro -%}
+
+{%- macro Header(classes = [], id = undefined) -%}
+<header class="layout-header {{ classes | join(' ') }}"
+        {% if id %} id="{{id}}" {% endif %}>{{ caller() }}</header>
+{%- endmacro -%}
+
+{%- macro Sider(width = 120, classes = [], id = undefined) -%}
+<aside class="layout-sider {{ classes | join(' ') }}"
+       style="flex: 0 0 {{width}}px; max-width: {{width}}px; min-width: {{width}}px; width: {{width}}px;"
+       {% if id %} id="{{id}}" {% endif %}>{{ caller() }}</aside>
+{%- endmacro -%}
+
+{%- macro Content(width, classes = [], id = undefined) -%}
+<section class="layout-content {{ classes | join(' ') }}"
+         {% if id %} id="{{id}}" {% endif %}>{{ caller() }}</section>
+{%- endmacro -%}
+
+{%- macro Footer(classes = [], id = undefined) -%}
+<footer class="layout-content {{ classes | join(' ') }}"
+        {% if id %} id="{{id}}" {% endif %}>{{ caller() }}</footer>
+{%- endmacro -%}

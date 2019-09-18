@@ -15,7 +15,7 @@ $danger:            #E73A23;
 $light:             #E7E9EC;
 
 // border color
-$border-color:      darken($default, 10%);
+$border-color:      rgba($gray, .25);
 
 // border radius
 $border-radius:     3px;

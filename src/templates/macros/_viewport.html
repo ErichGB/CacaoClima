@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% from 'macros/menu.html' import Menu %}
+{% from 'macros/Wizard.html' import Wizard %}
+{% from 'macros/NavSection.html' import Nav %}
+{% from 'macros/Layout.html' import Layout, Header, Sider, Content, Footer %}
+
+{% macro Viewport(data, section, step, stepNum) %}
+    {% call Layout(true, [], 'viewport') %}
+
+        {% call Sider(112, ['bg-white border-right']) %}
+            {{ Menu(data.menu, section) }}
+        {% endcall %}
+
+        {% call Layout() %}
+            {% call Header([], 'header') %}
+                {% include "partials/header.html" %}
+            {% endcall %}
+
+            {% call Layout(true) %}
+                {% call Sider(224, ['d-none', 'd-xl-block']) %}
+                    {{ Nav(data.sections[section], section + '.' + step) }}
+                {% endcall %}
+
+                {% call Content() %}
+
+                    <section class="w-100 bg-white"
+                             style="min-height: 100%">
+
+                        <div class="container-fluid">
+                            {{ Wizard(data.sections[section], stepNum) }}
+                        </div>
+
+                        {{ caller() }}
+                    </section>
+
+                {% endcall %}
+            {% endcall %}
+        {% endcall %}
+    {% endcall %}
+{% endmacro %}

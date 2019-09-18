@@ -1,91 +1,93 @@
 {
-  "menu": [
-    {
-      "id": "lugar",
-      "href": "/",
-      "icon": "World.svg",
-      "label": "Lugar",
-      "title": "Selecciona la ubicacion de la finca"
-    },
-    {
-      "id": "clima",
-      "href": "/clima/",
-      "icon": "Winter.svg",
-      "label": "Clima",
-      "title": "Dashboard"
-    },
-    {
-      "id": "plan",
-      "href": "/plan/",
-      "icon": "Book.svg",
-      "label": "Planificar",
-      "title": "Dashboard"
-    }
-  ],
-  "sections": {
-    "clima": [
+  "data": {
+    "menu": [
       {
-        "id": "clima.info",
+        "id": "lugar",
+        "href": "/",
+        "icon": "World.svg",
+        "label": "Lugar",
+        "title": "Selecciona la ubicacion de la finca"
+      },
+      {
+        "id": "clima",
         "href": "/clima/",
-        "icon": "information.svg",
-        "label": "Información General"
+        "icon": "Winter.svg",
+        "label": "Clima",
+        "title": "Dashboard"
       },
       {
-        "id": "clima.rainfall",
-        "href": "/clima/Precipitacion.html",
-        "icon": "rainfall.svg",
-        "label": "Precipitación"
-      },
-      {
-        "id": "clima.temp",
-        "href": "/clima/Temperatura.html",
-        "icon": "celsius.svg",
-        "label": "Temperatura"
-      },
-      {
-        "id": "clima.flair",
-        "href": "/clima/Aptitud.html",
-        "icon": "seeding.svg",
-        "label": "Aptitud del Cacao"
-      },
-      {
-        "id": "clima.gradient",
-        "href": "/clima/Gradiente.html",
-        "icon": "planting.svg",
-        "label": "Gradiente de Impacto"
-      },
-      {
-        "id": "clima.practice",
-        "href": "/clima/Practicas.html",
-        "icon": "watering.svg",
-        "label": "Practicas"
+        "id": "plan",
+        "href": "/plan/",
+        "icon": "Book.svg",
+        "label": "Planificar",
+        "title": "Dashboard"
       }
     ],
-    "plan": [
-      {
-        "id": "plan.compare",
-        "href": "/plan/",
-        "icon": "growth.svg",
-        "label": "Comparación"
-      },
-      {
-        "id": "plan.garden",
-        "href": "/plan/Recomendaciones.html",
-        "icon": "garden.svg",
-        "label": "Recomendaciones"
-      },
-      {
-        "id": "plan.development",
-        "href": "/plan/PlanDeDesarrollo.html",
-        "icon": "document.svg",
-        "label": "Plan de Desarrollo"
-      },
-      {
-        "id": "plan.budget",
-        "href": "/plan/GenerarPresupuesto.html",
-        "icon": "investment.svg",
-        "label": "Generar Presupuesto"
-      }
-    ]
+    "sections": {
+      "clima": [
+        {
+          "id": "clima.info",
+          "href": "/clima/",
+          "icon": "information.svg",
+          "label": "Información General"
+        },
+        {
+          "id": "clima.rainfall",
+          "href": "/clima/Precipitacion.html",
+          "icon": "rainfall.svg",
+          "label": "Precipitación"
+        },
+        {
+          "id": "clima.temp",
+          "href": "/clima/Temperatura.html",
+          "icon": "celsius.svg",
+          "label": "Temperatura"
+        },
+        {
+          "id": "clima.flair",
+          "href": "/clima/Aptitud.html",
+          "icon": "seeding.svg",
+          "label": "Aptitud del Cacao"
+        },
+        {
+          "id": "clima.gradient",
+          "href": "/clima/Gradiente.html",
+          "icon": "planting.svg",
+          "label": "Gradiente de Impacto"
+        },
+        {
+          "id": "clima.practice",
+          "href": "/clima/Practicas.html",
+          "icon": "watering.svg",
+          "label": "Practicas"
+        }
+      ],
+      "plan": [
+        {
+          "id": "plan.compare",
+          "href": "/plan/",
+          "icon": "growth.svg",
+          "label": "Comparación"
+        },
+        {
+          "id": "plan.garden",
+          "href": "/plan/Recomendaciones.html",
+          "icon": "garden.svg",
+          "label": "Recomendaciones"
+        },
+        {
+          "id": "plan.development",
+          "href": "/plan/PlanDeDesarrollo.html",
+          "icon": "document.svg",
+          "label": "Plan de Desarrollo"
+        },
+        {
+          "id": "plan.budget",
+          "href": "/plan/GenerarPresupuesto.html",
+          "icon": "investment.svg",
+          "label": "Generar Presupuesto"
+        }
+      ]
+    }
   }
 }
