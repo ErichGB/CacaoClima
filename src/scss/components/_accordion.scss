@@ -21,4 +21,19 @@
     border-bottom: 0;
     background-color: transparent;
   }
+
+  .media-numeric[data-toggle="collapse"]{
+      cursor: pointer;
+
+      .media-right {
+          transition: all .35s;
+          transform: rotateZ(180deg);
+      }
+
+      &.collapsed {
+        .media-right {
+          transform: rotateZ(0);
+        }
+      }
+  }
 }
