@@ -25,9 +25,8 @@ $breadcrumb-divider:                url('data:image/svg+xml;utf8,<svg width="8" 
 $breadcrumb-border-radius:          0;
 
 // form
-$input-bg:            transparent;
-$input-border-color:  transparent;
-$input-border-radius: 0;
+$input-padding-y: .65rem;
+//$input-padding-x: ;
 
 // Buttons
 $btn-padding-y: .65rem;

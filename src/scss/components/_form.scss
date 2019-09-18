@@ -1,5 +1,10 @@
-.form-control{
-  border-bottom: 1px solid;
+.form-control-custom{
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: $dark;
+  background-color: transparent;
 }
 
 .form-select{
