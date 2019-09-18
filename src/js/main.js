@@ -11,6 +11,7 @@
                     this.initialized = true;
                     this.tabs();
                     this.collapse();
+                    this.dropdown();
                     this.events();
                 }
             },
@@ -25,16 +26,20 @@
                 $('.collapse').collapse()
             },
 
+            dropdown: () => {
+                $('.dropdown-toggle').dropdown()
+            },
+
             events: function () {
-                // $tis.windowResize();
-            },
+                    // $tis.windowResize();
+                },
 
-            windowResize: function(){
+                windowResize: function(){
 
-            },
-        };
+                },
+            };
 
-        project.init();
+            project.init();
 
     });
 }(jQuery));
