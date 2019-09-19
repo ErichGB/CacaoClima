@@ -455,7 +455,9 @@
 
                     </div>
                     <div class="p-3">
-                        <img src="../../images/chart.png" class="img-fluid w-100" alt="">
+                        <div class="small-chart-container">
+                            <canvas id="chartPrecipitacion"></canvas>
+                        </div>
                     </div>
                 </div>
                 <div class="card border-0 shadow-lg">
@@ -486,7 +488,9 @@
 
                     </div>
                     <div class="p-3">
-                        <img src="../../images/chart2.png" class="img-fluid w-100" alt="">
+                        <div class="small-chart-container">
+                            <canvas id="chartTemp"></canvas>
+                        </div>
                     </div>
                 </div>
                 <div class="card border-0 shadow-lg">
@@ -519,10 +523,13 @@
 
                     </div>
                     <div class="p-3">
-                        <img src="../../images/chart3.png" class="img-fluid w-100" alt="">
+                        <div class="small-chart-container">
+                            <canvas id="chartAptitud"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="row mt-4">
                 <div class="col-sm-8">
                     <div class="shadow-lg">
@@ -561,7 +568,9 @@
 
                         </div>
                         <div class="p-3">
-                            <img src="../../images/chart3.png" class="img-fluid w-100" alt="">
+                            <div class="small-chart-container">
+                                <canvas id="chartGradient"></canvas>
+                            </div>
                         </div>
                     </div>
                     
@@ -606,6 +615,7 @@
     <script src="../../bower_components/jquery/dist/jquery.js"></script>
     <script src="../../bower_components/popper.js/dist/umd/popper.js"></script>
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../bower_components/chart.js/dist/Chart.js"></script>
     <!-- endbower -->
 
     <!-- build:js js/app.js -->
