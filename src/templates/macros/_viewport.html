@@ -12,7 +12,7 @@
             {{ Menu(data.menu, section) }}
         {% endcall %}
 
-        {% call Layout() %}
+        {% call Layout(false, ['overflow-hidden']) %}
             {% call Header([], 'header') %}
                 {% include "partials/header.html" %}
             {% endcall %}
